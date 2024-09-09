@@ -1,0 +1,104 @@
+.page-title {
+	display: flex;
+	align-items: center;
+	@extend .container-flux;
+	text-align: center;
+    justify-content: center;
+	margin: 40px 0px;
+	h1 {
+		font-weight: bold;
+		color: gray;
+		margin-right: 20px;
+	}
+	img {
+		height: 60px;
+	}
+}
+
+.page-content {
+	@extend .container-flux;
+	padding: 40px 20px;
+	padding-bottom: 300px;
+	p {
+		margin: 40px 0px;
+	}
+	
+	h2 {
+		font-weight: bold;
+		color: $primary;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		text-align: center;
+	}
+}
+
+.frequent-questions {
+    display: flex;
+    flex-direction: column;
+    .tree-root {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .tree-content {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .ant-collapse-content-box {
+        ul {
+            .active {
+                color: $primary;
+            }
+            li {
+                padding: 10px 0px;
+                border-bottom: 1px solid #ebebeb;
+                cursor: pointer;
+            }
+            li:hover {
+                border-bottom: 1px solid $primary;
+            }
+        }
+    }
+}
+.frequent-icon {
+    text-align: center;
+    .frequent-icon-title {
+        color: #9b9b9b;
+        font-size: 1.0rem;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 10px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 0px;
+                margin: 0px;
+                max-width: 100px;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: $device-md) { 
+    .frequent-questions {
+        flex-direction: row;
+        .tree-root {
+            width: 30%;
+            padding-right: 80px;
+        }
+        .tree-content {
+            width: 70%;
+            padding-left: 80px;
+            border-left: 1px solid gray;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@import '../../../scss/configs/breakpoints.scss';
+
+.mainTable {
+  padding: 0 55px 100px;
+  & .content-add-tramite {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  & .header-page {
+    & h6 {
+      color: var(--primary-color--light);
+      font-weight: 600;
+      font-size: var(--font-size-md);
+      margin-bottom: 20px;
+    }
+    & .main-card {
+      &-table {
+        & .ant-table {
+          border: 2px solid #b6b6b6;
+          border-radius: 5px;
+          background-color: transparent;
+          & .ant-table-thead {
+            & .ant-table-cell {
+              background: none;
+              border-bottom: 2px solid #b6b6b6;
+              background-color: transparent;
+              color: #878787;
+              font-size: var(--font-size-sm);
+              border-right: 2px solid #b6b6b6;
+              &:last-of-type {
+                border-right: none;
+              }
+            }
+          }
+          & .ant-table-tbody {
+            & .ant-table-row {
+              & .ant-table-cell {
+                color: #878787;
+                font-size: var(--font-size-sm);
+                border-bottom: 2px solid #b6b6b6;
+                border-right: 2px solid #b6b6b6;
+                &:last-of-type {
+                  border-right: none;
+                }
+                & .action-edit {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 4px;
+                  align-items: center;
+                  color: var(--primary-color--light);
+                  font-weight: 600;
+                  font-size: var(--font-size-sm);
+                  cursor: pointer;
+                }
+              }
+              &:hover {
+                & .ant-table-cell {
+                  background: none;
+                }
+              }
+              &:last-of-type {
+                & .ant-table-cell {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-md) {
+  .mainTable {
+    & .main-card {
+      &-table {
+        & .ant-table {
+          overflow-x: overlay;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $device-sm) {
+  .mainTable {
+    padding: 0 20px 100px;
+  }
+}

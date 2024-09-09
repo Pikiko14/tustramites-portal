@@ -1,0 +1,16 @@
+@import '../tabs/tab3/scss/tab3.scss';
+
+.tramiteInfo {
+  & .ant-tabs-nav {
+    &-list {
+      & .ant-tabs-tab {
+        padding: 16px 0 8px;
+        color: #878787;
+        font-weight: 500;
+        &:hover {
+          color: var(--primary-color--light);
+        }
+      }
+    }
+  }
+}

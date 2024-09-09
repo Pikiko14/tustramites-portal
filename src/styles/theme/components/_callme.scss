@@ -1,0 +1,129 @@
+.call-me {
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  max-width: 350px;
+  z-index: 3000;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.15);
+  .call-me-header {
+    background-color: $secundary;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 1.2rem;
+      padding-right: 40px;
+    }
+    svg {
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  .call-me-content {
+    background-color: white;
+    padding: 20px;
+    p {
+      font-size: 0.8rem;
+      color: gray;
+      padding-bottom: 20px;
+    }
+    .form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+
+      span {
+        font-size: 0.7rem;
+        margin-top: 12px;
+      }
+      button {
+        background-color: $primary;
+        border-radius: 25px;
+        padding: 5px 20px;
+        color: white;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $device-md) {
+  .call-me {
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: $device-sm) {
+  .call-me {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    .call-me-header {
+      background-color: $secundary;
+      padding: 3px 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        color: white;
+        font-size: 0.8rem;
+        padding-right: 20px;
+      }
+      svg {
+        color: white;
+        font-size: 1.2rem;
+      }
+    }
+    .call-me-content {
+      background-color: white;
+      padding: 10px;
+      p {
+        font-size: 0.65rem;
+        color: gray;
+        padding-bottom: 10px;
+      }
+      .ant-form-item .ant-form-item-label label {
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        color: #757575;
+      }
+      .ant-form-item .ant-form-item-control-input input,
+      .ant-form-item .ant-form-item-control-input .ant-input,
+      .ant-form-item .ant-form-item-control-input .ant-input-password,
+      .ant-form-item .ant-form-item-control-input .ant-input-number-input-wrap {
+        border: none;
+        min-height: 27px;
+        padding: 0px;
+        width: 100%;
+        font-size: 0.65rem;
+      }
+      .form-footer {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+
+        span {
+          font-size: 0.7rem;
+          margin-top: 12px;
+        }
+        button {
+          padding: 0 5px;
+          background-color: $primary;
+          border-radius: 25px;
+          padding: 5px 20px;
+          color: white;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.ant-form-item-control-input {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-form-item-control-input-content {
+    flex: auto;
+    max-width: 100%;
+    display: contents;
+}
+
+.ant-picker-calendar {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    border-radius: 20px;
+
+    .ant-picker-date-panel, .ant-picker-panel {
+        border-radius: 20px;
+    }
+
+
+    .ant-radio-group {
+        display: none;
+    }
+    
+    .ant-picker-body {
+        border-radius: 20px;
+        background-color: $secundary;
+        justify-content: center;
+        text-align: center;
+        tr > th {
+            color: white;
+        }
+        td, th {
+            width: 30px !important;
+            display: inline-block;
+            white-space: nowrap;
+            margin: 8px;
+        }
+        .ant-picker-calendar-date {
+            width: 30px !important;
+            height: 30px !important;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            .ant-picker-calendar-date-value {
+                color: $primary;
+            }
+
+        }
+
+        .ant-picker-cell-disabled {
+            .ant-picker-calendar-date {
+                background-color: rgb(189, 186, 186);
+                
+            }
+        }
+
+        .ant-picker-cell-selected {
+            .ant-picker-calendar-date {
+                background-color: $primary;
+                color: white;
+                border: none;
+                .ant-picker-calendar-date-value {
+                    color: white;
+                }
+            }
+        }
+
+        .ant-picker-cell-selected:hover {
+            .ant-picker-calendar-date {
+                background-color: $primary;
+                .ant-picker-calendar-date-value {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+

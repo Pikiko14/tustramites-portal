@@ -1,0 +1,293 @@
+[
+  {
+    "state": "AZUAY",
+    "cities": [
+      "CUENCA",
+      "GIRÓN",
+      "GUALACEO",
+      "NABÓN",
+      "PAUTE",
+      "PUCARA",
+      "SAN FERNANDO",
+      "SANTA ISABEL",
+      "SIGSIG",
+      "OÑA",
+      "CHORDELEG",
+      "EL PAN",
+      "SEVILLA DE ORO",
+      "GUACHAPALA",
+      "CAMILO PONCE ENRÍQUEZ"
+    ]
+  },
+  {
+    "state": "BOLIVAR",
+    "cities": ["GUARANDA", "CHILLANES", "CHIMBO", "ECHEANDÍA", "SAN MIGUEL", "CALUMA", "LAS NAVES"]
+  },
+  {
+    "state": "CAÑAR",
+    "cities": ["AZOGUES", "BIBLIÁN", "CAÑAR", "LA TRONCAL", "EL TAMBO", "DÉLEG", "SUSCAL"]
+  },
+  {
+    "state": "CARCHI",
+    "cities": ["TULCÁN", "BOLÍVAR", "ESPEJO", "MIRA", "MONTÚFAR", "SAN PEDRO DE HUACA"]
+  },
+  {
+    "state": "COTOPAXI",
+    "cities": ["LATACUNGA", "LA MANÁ", "PANGUA", "PUJILI", "SALCEDO", "SAQUISILÍ", "SIGCHOS"]
+  },
+  {
+    "state": "CHIMBORAZO",
+    "cities": [
+      "RIOBAMBA",
+      "ALAUSI",
+      "COLTA",
+      "CHAMBO",
+      "CHUNCHI",
+      "GUAMOTE",
+      "GUANO",
+      "PALLATANGA",
+      "PENIPE",
+      "CUMANDÁ"
+    ]
+  },
+  {
+    "state": "EL ORO",
+    "cities": [
+      "MACHALA",
+      "ARENILLAS",
+      "ATAHUALPA",
+      "BALSAS",
+      "CHILLA",
+      "EL GUABO",
+      "HUAQUILLAS",
+      "MARCABELÍ",
+      "PASAJE",
+      "PIÑAS",
+      "PORTOVELO",
+      "SANTA ROSA",
+      "ZARUMA",
+      "LAS LAJAS"
+    ]
+  },
+  {
+    "state": "ESMERALDAS",
+    "cities": [
+      "ESMERALDAS",
+      "ELOY ALFARO",
+      "MUISNE",
+      "QUININDÉ",
+      "SAN LORENZO",
+      "ATACAMES",
+      "RIOVERDE",
+      "LA CONCORDIA",
+      "SIGSIG",
+      "OÑA",
+      "CHORDELEG",
+      "EL PAN",
+      "SEVILLA DE ORO",
+      "GUACHAPALA",
+      "CAMILO PONCE ENRÍQUEZ"
+    ]
+  },
+  {
+    "state": "GUAYAS",
+    "cities": [
+      "GUAYAQUIL",
+      "ALFREDO BAQUERIZO MORENO (JUJÁN)",
+      "BALAO",
+      "BALZAR",
+      "COLIMES",
+      "DAULE",
+      "DURÁN",
+      "EL EMPALME",
+      "EL TRIUNFO",
+      "MILAGRO",
+      "NARANJAL",
+      "NARANJITO",
+      "PALESTINA",
+      "PEDRO CARBO",
+      "SAMBORONDÓN",
+      "SANTA LUCÍA",
+      "SALITRE (URBINA JADO)",
+      "SAN JACINTO DE YAGUACHI",
+      "PLAYAS",
+      "SIMÓN BOLÍVAR",
+      "CORONEL MARCELINO MARIDUEÑA",
+      "LOMAS DE SARGENTILLO",
+      "NOBOL",
+      "GENERAL ANTONIO ELIZALDE",
+      "ISIDRO AYORA"
+    ]
+  },
+  {
+    "state": "IMBABURA",
+    "cities": [
+      "IBARRA",
+      "ANTONIO ANTE",
+      "COTACACHI",
+      "OTAVALO",
+      "PIMAMPIRO",
+      "SAN MIGUEL DE URCUQUÍ"
+    ]
+  },
+  {
+    "state": "LOJA",
+    "cities": [
+      "LOJA",
+      "CALVAS",
+      "CATAMAYO",
+      "CELICA",
+      "CHAGUARPAMBA",
+      "ESPÍNDOLA",
+      "GONZANAMÁ",
+      "MACARÁ",
+      "PALTAS",
+      "PUYANGO",
+      "SARAGURO",
+      "SOZORANGA",
+      "ZAPOTILLO",
+      "PINDAL",
+      "QUILANGA",
+      "OLMEDO"
+    ]
+  },
+  {
+    "state": "LOS RIOS",
+    "cities": [
+      "BABAHOYO",
+      "BABA",
+      "MONTALVO",
+      "PUEBLOVIEJO",
+      "QUEVEDO",
+      "URDANETA",
+      "VENTANAS",
+      "VÍNCES",
+      "PALENQUE",
+      "BUENA FÉ",
+      "VALENCIA",
+      "MOCACHE",
+      "QUINSALOMA"
+    ]
+  },
+  {
+    "state": "MANABI",
+    "cities": [
+      "PORTOVIEJO",
+      "BOLÍVAR",
+      "CHONE",
+      "EL CARMEN",
+      "FLAVIO ALFARO",
+      "JIPIJAPA",
+      "JUNÍN",
+      "MANTA",
+      "MONTECRISTI",
+      "PAJÁN",
+      "PICHINCHA",
+      "ROCAFUERTE",
+      "SANTA ANA",
+      "SUCRE",
+      "TOSAGUA",
+      "24 DE MAYO",
+      "PEDERNALES",
+      "OLMEDO",
+      "PUERTO LÓPEZ",
+      "JAMA",
+      "JARAMIJÓ",
+      "SAN VICENTE"
+    ]
+  },
+  {
+    "state": "MORONA SANTIAGO",
+    "cities": [
+      "MORONA",
+      "GUALAQUIZA",
+      "LIMÓN INDANZA",
+      "PALORA",
+      "SANTIAGO",
+      "SUCÚA",
+      "HUAMBOYA",
+      "SAN JUAN BOSCO",
+      "TAISHA",
+      "LOGROÑO",
+      "PABLO SEXTO",
+      "TIWINTZA"
+    ]
+  },
+  {
+    "state": "NAPO",
+    "cities": ["TENA", "ARCHIDONA", "EL CHACO", "QUIJOS", "CARLOS JULIO AROSEMENA TOLA"]
+  },
+  {
+    "state": "PASTAZA",
+    "cities": ["PASTAZA", "MERA", "SANTA CLARA", "ARAJUNO"]
+  },
+  {
+    "state": "PICHINCHA",
+    "cities": [
+      "QUITO",
+      "CAYAMBE",
+      "MEJIA",
+      "PEDRO MONCAYO",
+      "RUMIÑAHUI",
+      "SAN MIGUEL DE LOS BANCOS",
+      "PEDRO VICENTE MALDONADO",
+      "PUERTO QUITO"
+    ]
+  },
+  {
+    "state": "TUNGURAHUA",
+    "cities": [
+      "AMBATO",
+      "BAÑOS DE AGUA SANTA",
+      "CEVALLOS",
+      "MOCHA",
+      "PATATE",
+      "QUERO",
+      "SAN PEDRO DE PELILEO",
+      "SANTIAGO DE PÍLLARO",
+      "TISALEO"
+    ]
+  },
+  {
+    "state": "ZAMORA CHINCHIPEO",
+    "cities": [
+      "ZAMORA",
+      "CHINCHIPE",
+      "NANGARITZA",
+      "YACUAMBI",
+      "YANTZAZA (YANZATZA)",
+      "EL PANGUI",
+      "CENTINELA DEL CÓNDOR",
+      "PALANDA",
+      "PAQUISHA"
+    ]
+  },
+  {
+    "state": "GALAPAGOS",
+    "cities": ["SAN CRISTÓBAL", "ISABELA", "SANTA CRUZ"]
+  },
+  {
+    "state": "SUCUMBIOS",
+    "cities": [
+      "LAGO AGRIO",
+      "GONZALO PIZARRO",
+      "PUTUMAYO",
+      "SHUSHUFINDI",
+      "SUCUMBÍOS",
+      "CASCALES",
+      "CUYABENO"
+    ]
+  },
+  {
+    "state": "ORELLANA",
+    "cities": ["ORELLANA", "AGUARICO", "LA JOYA DE LOS SACHAS", "LORETO"]
+  },
+  {
+    "state": "SANTO DOMINGO DE LOS TSACHILAS",
+    "cities": ["SANTO DOMINGO"]
+  },
+  {
+    "state": "SANTA ELENA",
+    "cities": ["SANTA ELENA", "LA LIBERTAD", "SALINAS"]
+  }
+]

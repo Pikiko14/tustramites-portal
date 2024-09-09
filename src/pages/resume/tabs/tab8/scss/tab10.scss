@@ -1,0 +1,99 @@
+@import '../../../../../scss/configs/mixin-components.scss';
+
+.tabTen {
+  padding: 15px 65px 135px;
+  & h3.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  & .line-morado {
+    width: 55%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--primary-color--dark);
+    margin-bottom: 8px;
+  }
+  & h2.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: bold;
+    font-size: 26px;
+  }
+  & .diplayflex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    & .content-circule {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      width: 65px;
+      background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+      border-radius: 50%;
+      & .circule-number {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
+    & .titleIngresarInfo {
+      font-size: 22px;
+      color: #878787;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  & .display-linebreak {
+    font-size: 14px;
+    color: #878787;
+    font-weight: 400;
+    padding-left: 80px;
+  }
+  & .ant-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    & .ant-form-item-label {
+      overflow: visible;
+      white-space: normal;
+      & .ant-form-item-required,
+      & label {
+        font-size: 15px;
+        color: #878787;
+        font-weight: 500;
+      }
+    }
+    & .ant-form-item-control-input-content {
+      & .ant-input-affix-wrapper {
+        & .ant-input {
+          color: #878787;
+        }
+      }
+    }
+    & .ant-btn {
+      padding: 18px 20px;
+      border-radius: 25px;
+      box-shadow: 0px 3px 6px #00000029;
+      gap: 10px;
+      align-self: flex-end;
+      font-size: 16px;
+      font-weight: 700;
+      background-image: linear-gradient(180deg, #1ba5fb 0%, #105efb 100%);
+      transition: all 0.3s ease;
+      & .icon,
+      & .icon path,
+      & .anticon.anticon-schedule svg {
+        @include icon(#fff, 20px);
+      }
+
+      &:hover {
+        background-image: none;
+        background-color: var(--primary-color--light);
+      }
+    }
+  }
+}

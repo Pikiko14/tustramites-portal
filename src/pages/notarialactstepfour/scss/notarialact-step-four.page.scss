@@ -1,0 +1,213 @@
+@import '../../../scss/configs/breakpoints.scss';
+
+.notarialStepFour {
+  padding: 50px;
+  & .content-add-tramite {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  & .containerProcedure-info {
+    padding-left: 10px;
+    & .categories {
+      & h3.title-indicaciones {
+        color: var(--primary-color--dark);
+        font-weight: 600;
+        font-size: var(--font-size-base);
+        margin-bottom: 3px;
+      }
+      & .line-morado {
+        width: 55%;
+        height: 2px;
+        border-radius: 10px;
+        background-color: var(--primary-color--dark);
+        margin-bottom: 8px;
+      }
+      & h2.title-indicaciones {
+        color: var(--primary-color--dark);
+        font-weight: bold;
+        font-size: var(--font-size-md);
+      }
+      & .diplayflex {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        & .content-circule {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 65px;
+          width: 65px;
+          background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+          border-radius: 50%;
+          & .circule-number {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 800;
+          }
+        }
+        & .titleIngresarInfo {
+          font-size: var(--font-size-md);
+          color: #878787;
+          font-weight: 700;
+          margin: 0;
+        }
+      }
+    }
+  }
+  & .containerBilling {
+    & .titleIngresarInfo {
+      font-size: var(--font-size-md);
+      color: #878787;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &-client {
+      color: #878787;
+      font-weight: 200;
+      font-size: var(--font-size-base);
+      margin-bottom: 15px;
+    }
+  }
+  & .ant-form {
+    width: 75%;
+    margin-top: 25px;
+    & .formFour-items {
+      flex-flow: row;
+      gap: 20px;
+      width: 100%;
+      &.three {
+        & .selectDynamic {
+          width: 100%;
+          height: 52px;
+        }
+      }
+      & .placeholderBold {
+        & .ant-select-selector {
+          & .ant-select-selection-item,
+          & .ant-select-selection-placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            color: #878787;
+          }
+        }
+      }
+      & .placeholderNormal {
+        & input {
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+            // color: #878787;
+          }
+        }
+      }
+      & .ant-form-item {
+        &:not(.selectDynamic) {
+          width: 65%;
+          height: 52px;
+        }
+        &.selectDynamic {
+          width: 35%;
+          height: 52px;
+        }
+        & .ant-form-item-control-input-content {
+          & .ant-input-affix-wrapper {
+            & .ant-input {
+              // font-size: 15px;
+              color: #878787;
+            }
+          }
+        }
+      }
+    }
+  }
+  & .containerButtonFinished {
+    & .ant-form-item {
+      margin: 0;
+      margin-top: 20px;
+      & .ant-btn {
+        padding: 18px 20px;
+        border-radius: 25px;
+        box-shadow: 0px 3px 6px #00000029;
+        font-size: var(--font-size-base);
+        font-weight: 700;
+        transition: all 0.3s ease;
+        &:hover {
+          background-image: none;
+          background-color: var(--primary-color--light);
+        }
+      }
+      & .btnContinuar {
+        background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+        color: var(--primary-color--light);
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.ant-select-item.optionStepFour {
+  & .ant-select-item-option-content {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    color: #878787;
+    // padding-right: 20px;
+  }
+}
+
+
+@media screen and (max-width: $device-md) {
+  .notarialStepFour {
+    & .containerBilling {
+      .ant-col-16 {
+        flex: auto;
+        max-width: max-content;
+
+      }
+    }
+    & .ant-form {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: $device-sm) {
+  .notarialStepFour {
+    padding: 50px 25px;
+    & .containerProcedure-info {
+      & .categories {
+        & .diplayflex {
+          & .content-circule {
+            height: 55px;
+            width: 55px;
+            min-height: 55px;
+            min-width: 55px;
+          }
+        }
+      }
+    }  
+    & .ant-form {
+      padding: 0 10%;
+      & .formFour-items {
+        flex-direction: column;
+        gap: 0;
+        & .ant-form-item {
+          width: 100%;
+          &.selectDynamic, &:not(.selectDynamic) {
+            width: 100%;
+            height: 52px !important;
+          }
+        }
+      } 
+    }
+  }
+}
+
+.ant-select {
+  height: 52px !important;
+}

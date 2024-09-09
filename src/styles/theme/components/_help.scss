@@ -1,0 +1,221 @@
+.btn-help {
+  position: fixed;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  width: auto;
+  height: 150px;
+  text-align: center;
+  .btn-help-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    .globe-help {
+      width: 120px;
+    }
+    .action-help {
+      width: 50px;
+    }
+    .panel-help {
+      visibility: hidden;
+      width: 400px;
+      height: 500px;
+      background-size: cover;
+      position: absolute;
+      bottom: -300px;
+      right: -215px;
+      transition: width 0.5s, height 0.5s;
+      .rectangule {
+        width: 90px;
+        transform: rotate(-45deg);
+        transition: transform 0.1s ease-in-out;
+        position: absolute;
+        bottom: 300px;
+        right: 240px;
+      }
+      .close {
+        position: absolute;
+        bottom: 335px;
+        right: 275px;
+        width: 20px;
+      }
+      .help-menu {
+        display: flex;
+        align-items: center;
+        transition: transform 0.1s ease-in-out;
+        // lo nuevo
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        height: 75px;
+        width: 100px;
+        justify-content: center;
+        border: 1px solid $primary;
+        img {
+          width: 28px;
+          height: 28px;
+        }
+        p {
+          font-size: 0.6rem;
+          max-width: 100px;
+          color: #9b9b9b;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .one {
+        position: absolute;
+        bottom: 410px;
+        right: 240px;
+      }
+      .two {
+        position: absolute;
+        bottom: 365px;
+        right: 352px;
+      }
+      .three {
+        position: absolute;
+        bottom: 510px;
+        right: 240px;
+      }
+    }
+  }
+}
+.btn-help-hover.show-panel {
+  .globe-help {
+    visibility: hidden;
+  }
+  .action-help {
+    visibility: hidden;
+  }
+  .panel-help {
+    visibility: visible;
+    transition: 3s all;
+    width: 400px;
+    height: 600px;
+    .rectangule {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@media only screen and (min-width: $device-md) {
+  .btn-help {
+    right: 5px;
+    bottom: 30px;
+    .btn-help-hover {
+      .globe-help {
+        width: 130px;
+      }
+      .action-help {
+        width: 50px;
+      }
+    }
+    .panel-help {
+      right: -180px;
+    }
+  }
+}
+
+@media only screen and (max-width: $device-sm) {
+  .btn-help {
+    right: -10px;
+    bottom: 4px;
+    .btn-help-hover {
+      .globe-help {
+        width: 110px;
+      }
+      .action-help {
+        width: 50px;
+      }
+      .panel-help {
+        right: -180px;
+        visibility: hidden;
+        width: 400px;
+        height: 500px;
+        background-size: cover;
+        position: absolute;
+        bottom: -300px;
+        right: -200px;
+        transition: width 0.5s, height 0.5s;
+        .rectangule {
+          width: 70px;
+          transform: rotate(-45deg);
+          transition: transform 0.1s ease-in-out;
+          position: absolute;
+          bottom: 300px;
+          right: 220px;
+        }
+        .close {
+          position: absolute;
+          bottom: 328px;
+          right: 248px;
+          width: 13px;
+        }
+        .help-menu {
+          display: flex;
+          align-items: center;
+          transition: transform 0.1s ease-in-out;
+          // lo nuevo
+          flex-direction: column;
+          background-color: white;
+          padding: 10px;
+          border-radius: 10px;
+          height: 70px;
+          width: 70px;
+          justify-content: center;
+          border: 1px solid $primary;
+          img {
+            width: 22px;
+            height: 22px;
+          }
+          p {
+            font-size: 0.5rem;
+            max-width: 80px;
+            color: #9b9b9b;
+            margin-top: 5px;
+          }
+        }
+        .one {
+          position: absolute;
+          bottom: 385px;
+          right: 221px;
+        }
+        .two {
+          position: absolute;
+          bottom: 365px;
+          right: 352px;
+        }
+        .three {
+          position: absolute;
+          bottom: 487px;
+          right: 220px;
+        }
+      }
+    }
+  }
+
+  .btn-help-hover.show-panel {
+    .globe-help {
+      visibility: hidden;
+    }
+    .action-help {
+      visibility: hidden;
+    }
+    .panel-help {
+      visibility: visible;
+      transition: 3s all;
+      width: 160px;
+      height: 250px;
+      // right: -230px;
+      .rectangule {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

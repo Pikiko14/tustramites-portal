@@ -1,0 +1,103 @@
+.ant-form-item {
+    border: 1px solid #ebebeb;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    
+    .ant-form-item-label {
+        margin: 0px;
+        padding: 0px;
+
+        label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #757575;
+        }
+    }
+
+    .ant-form-item-control-input {
+        min-height: 30px;
+        input, .ant-input, .ant-input-password, .ant-input-number-input-wrap {
+            border: none;
+            min-height: 30px;
+            padding: 0px;
+            width: 100%;
+        }
+        input:focus, .ant-input:focus, .ant-input-password:focus, .ant-input-number-input-wrap:focus {
+            outline: none !important;
+        }
+
+        .ant-input-number {
+            width: 100%;
+        }
+
+        .ant-select-selector {
+            border: none;
+            min-height: 30px;
+            padding: 0px;
+        }
+
+        .ant-select-focused .ant-select-selector,
+        .ant-select-selector:focus,
+        .ant-select-selector:active,
+        .ant-select-open .ant-select-selector {
+            border: none !important;
+            border-color: #d9d9d9 !important;
+            box-shadow: none !important;
+        }
+    }  
+
+    .ant-form-item-explain-error {
+        font-size: 0.7rem;
+        min-height: initial;
+    }
+}
+
+.ant-input-focused .ant-input,
+.ant-input:focus,
+.ant-input:active,
+.ant-input .ant-input {
+    border-color: #d9d9d9 !important;
+    box-shadow: none !important;
+}
+
+.ant-btn, .ant-btn-primary, .ant-btn:active, .ant-btn-primary:active {
+    background-color: $primary;
+    border-color: $primary;
+    border-radius: 20px;
+    color: white;
+}
+
+.ant-btn:hover, .ant-btn-primary:hover, 
+.ant-btn:focus, .ant-btn-primary:focus  {
+    border: 1px solid $primary;
+    color: $primary;
+    background-color: white !important;
+    
+}
+
+.ant-btn:hover, .ant-btn-primary:hover, .button-tramite:hover {
+    color: white !important;
+    background-color: $primary !important;
+}
+
+.input-file {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #757575;
+    }
+    .ant-upload-picture-card-wrapper {
+        margin-top: 10px;
+    }
+}
+
+.form-action {
+    width: 100%;
+    text-align: right;
+}

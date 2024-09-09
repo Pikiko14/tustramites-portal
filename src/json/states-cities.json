@@ -1,0 +1,38 @@
+[
+  {
+    "state": "Guayas",
+    "cities": ["Guayaquil", "Milagro"]
+  },
+  {
+    "state": "Pichincha",
+    "cities": ["Quito"]
+  },
+  {
+    "state": "Azuay",
+    "cities": ["Cuenca"]
+  },
+  {
+    "state": "Santo Domingo",
+    "cities": ["Santo Domingo de los Colorados"]
+  },
+  {
+    "state": "El Oro",
+    "cities": ["Machala"]
+  },
+  {
+    "state": "Manabi",
+    "cities": ["Manta", "Portoviejo"]
+  },
+  {
+    "state": "Esmeraldas",
+    "cities": ["Esmeraldas", "Eloy Alfaro"]
+  },
+  {
+    "state": "Tungurahua",
+    "cities": ["Ambato"]
+  },
+  {
+    "state": "Imbabura",
+    "cities": ["Ibarra"]
+  }
+]

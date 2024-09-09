@@ -1,0 +1,242 @@
+
+$size-drawer: 400px;
+
+.nav-extends {
+  margin: 20px 0px;
+  .menu-title {
+    padding: 20px 20px;
+    p {
+      opacity: 0.6;
+      font-weight: bold;
+      font-size: 0.7rem;
+      margin: 0px;
+      color: white;
+    }
+  }
+  ul.ant-menu {
+    padding: 0px;
+    width: 100%;
+    background-color: $primary;
+    li {
+      .ant-menu-item-icon {
+        font-size: 1.6rem;
+        color: white;
+      }
+      .ant-menu-title-content {
+        font-size: 0.9rem;
+        color: white;
+      }
+    }
+    .ant-menu-submenu {
+      padding: 0px;
+      .ant-menu-submenu-arrow {
+        color: white;
+      }
+    }
+    .ant-menu-item-selected {
+      background-color: $dark;
+      .ant-menu-title-content {
+        font-weight: bold;
+      }
+    }
+
+    .ant-menu-item::after {
+      border-right: initial;
+    }
+  }
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+  .drawer {
+    width: $size-drawer;
+    background-color: $primary;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .drawer-logo {
+      width: 100%;
+      padding: 0px 20px;
+      text-align: center;
+      //border-bottom: 1px solid #bdbdbd;
+      img {
+        width: auto;
+        height: 160px;
+      }
+    }
+    nav {
+      @extend .nav-extends;
+    }
+  }
+  .layout-content {
+    width: 100%;
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: 100vh;
+    overflow-y: auto;
+
+
+    header {
+      width: 100%;
+      //height: 100px;
+      display: flex;
+      padding: 0px 60px;
+      justify-content: space-between;
+      .responsive-menu {
+        img {
+          display: none;
+          height: 25px;
+          width: 25px;
+        }
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          margin-left: 30px;
+          img {
+            height: 25px;
+            width: 25px;
+          }
+        }
+        .profile {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    main {
+      .header-page {
+        padding: 10px 20px;
+        margin: 0px 20px;
+        h1 {
+          color: gray;
+        }
+      }
+
+      .main-card {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .main-card-action {
+          ul {
+            border-radius: 20px 20px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding: 20px 20px;
+            background-color: #fafafa;
+            margin-bottom: 0px;
+            li {
+              margin-left: 20px;
+              cursor: pointer;
+              svg {
+                height: 20px;
+                width: 20px;
+              }
+            }
+          }
+        }
+        form {
+          padding: 20px;
+        }
+      }
+
+      .form-footer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .ant-checkbox-wrapper {
+          font-size: 0.7rem !important;
+          color: gray;
+          a {
+            color: gray;
+            //font-weight: bold;
+            border-bottom: 1px solid white;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-drawer {
+  .ant-drawer-body {
+    padding: 0px;
+    .drawer {
+      background-color: $primary;
+      overflow-x: hidden;
+      .drawer-logo {
+        width: 100%;
+        padding: 0px 40px;
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      nav {
+        @extend .nav-extends;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $device-xxl) {
+  .layout {
+    .drawer {
+      .drawer-logo {
+        padding: 0px 20px;
+      }
+      nav {
+        ul {
+          padding: 20px 0px;
+          li {
+            padding: 20px 30px;
+            a {
+              font-size: 1.2em;
+              img {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $device-lg) {
+  .layout {
+    .drawer {
+      display: none;
+    }
+  }
+  .layout-content {
+    width: 100% !important;
+    header {
+      padding: 0px 10px !important;
+      .responsive-menu {
+        img {
+          display: inline !important;
+        }
+      }
+    }
+    .header-page {
+      padding: 0px !important;
+    }
+  }
+}

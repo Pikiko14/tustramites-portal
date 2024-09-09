@@ -1,0 +1,33 @@
+.ant-popover-title {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: $primary;
+    padding: 20px 20px;
+}
+
+.ant-popover-inner-content {
+    max-width: 400px;
+    height: 40vh;
+    overflow-y: scroll;
+
+    .notifications {
+        .notification-item {
+            border: 1px solid #ebebeb;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0px;
+            h2, p {
+                margin: 0px;
+                padding: 0px;
+            }
+            h2 {
+                font-size: 1.0rem;
+                font-weight: bold;
+            }
+            .date {
+                font-size: 0.6rem;
+                color: gray;
+            }
+        }
+    }
+}

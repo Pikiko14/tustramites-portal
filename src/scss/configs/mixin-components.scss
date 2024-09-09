@@ -1,0 +1,20 @@
+@mixin icon($color, $size: 24px) {
+  fill: $color;
+  width: $size;
+  height: $size;
+  transition: all 0.1s ease;
+}
+
+@mixin scrollCustom() {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+    border-radius: 20px;
+  }
+}

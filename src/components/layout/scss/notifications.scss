@@ -1,0 +1,91 @@
+@import '../../../scss/configs/breakpoints.scss';
+@import '../../../scss/configs/mixin-components.scss';
+
+.notifications {
+  & .notification-item {
+    cursor: pointer;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 20px 20px 0;
+    display: flex;
+    align-items: start;
+    &:last-of-type {
+      border-bottom: none;
+    }
+    & .icon-view {
+      color: var(--primary-color--light);
+      font-size: 10px;
+      margin-right: 10px;
+      padding-top: 10px;
+    }
+    & .content {
+
+      &.icon-view-active {
+        padding: 0;
+      }
+      padding: 0 0 0 20px;
+      width: 100%;
+      & .title {
+        font-size: var(--font-size-base);
+        font-weight: 600;
+        color: #878787;
+        display: flex;
+        align-items: center;
+        
+      }
+      & .message {
+        font-size: var(--font-size-sm);
+        font-weight: 500;
+        color: #878787;
+      }
+      & .date {
+        font-size: 13px;
+        color: #878787;
+        margin: 0;
+      }
+      & .container-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 10px 0;
+        flex-direction: row-reverse;
+        & .link-go {
+          color: var(--primary-color--light);
+          font-size: var(--font-size-sm);
+          font-weight: 800;
+          & .icon {
+            margin-left: 5px;
+            font-weight: 900;
+          }
+        }
+        & .btn-delet {
+          color: #dd0a0a;
+          font-size: var(--font-size-base);
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+.ant-popover {
+  width: 400px;
+}
+
+.active-scroll {
+  overflow: overlay;
+  max-height: 350px;
+  @include scrollCustom();
+}
+
+@media screen and (max-width: $device-sm) {
+  .ant-popover {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: $device-xs) {
+  .ant-popover {
+    max-width: 270px;
+  }
+}

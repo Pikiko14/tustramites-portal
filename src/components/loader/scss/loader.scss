@@ -1,0 +1,63 @@
+@import '../../../scss/configs/mixin-components.scss';
+@import '../../../scss/configs/breakpoints.scss';
+
+body {
+  &:has(.loader-page) {
+    overflow: hidden;
+  }
+  & .loader-page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    // background-color: #fff;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    & .containerImage {
+      height: 30vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // & img {
+      //   height: 100%;
+      // }
+      & .icon,
+      & .icon path {
+        @include icon(var(--primary-color--dark), 340px);
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  body {
+    & .loader-page {
+      & .containerImage {
+        & .icon,
+        & .icon path {
+          @include icon(var(--primary-color--dark), 220px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-xs) {
+  body {
+    & .loader-page {
+      & .containerImage {
+        & .icon,
+        & .icon path {
+          @include icon(var(--primary-color--dark), 160px);
+        }
+      }
+    }
+  }
+}

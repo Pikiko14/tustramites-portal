@@ -1,0 +1,165 @@
+@import '../../../scss/configs/breakpoints.scss';
+
+.heaaderHome {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 55px 55px 20px 55px;
+  justify-content: space-between;
+  align-items: center;
+  & .info-user-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 90px;
+    & .info-user {
+      background-size: 100% 100%;
+      padding: 50px 140px 50px 55px;
+      border-radius: 55px;
+      box-shadow: -5px 8px 15px -4px rgb(0 0 0 / 40%);
+      width: 100%;
+      & h1,
+      & h3 {
+        font-size: var(--font-size-xxl);
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 12px;
+        max-width: 30vw;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      & h6 {
+        font-size: var(--font-size-sm);
+        color: #fff;
+      }
+    }
+    & .photo-perfil {
+      list-style: none;
+      position: absolute;
+      right: -6%;
+      top: 50%;
+      transform: translate(-0%, -50%);
+      & li > .profile {
+        border-radius: 50%;
+        height: 100px;
+        outline: 2px solid var(--primary-color--light);
+        background-color: #fff;
+        box-shadow: 2px 12px 15px -6px rgb(0 0 0 / 40%);
+      }
+    }
+  }
+  & .content-config {
+    flex-grow: 1;
+    position: relative;
+    & ul {
+      list-style: none;
+      padding: 30px;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      gap: 30px;
+      & li {
+        cursor: pointer;
+        position: relative;
+        & .icon,
+        & .icon path {
+          @include icon(none, 33px);
+          stroke-width: 2px;
+        }
+        &:last-of-type {
+          & .icon,
+          & .icon path {
+            @include icon(#878787, 33px);
+          }
+        }
+        & .text-spam {
+          position: absolute;
+          transform: translate(-50%);
+          padding: 5px;
+          font-size: var(--font-size-sm);
+          font-family: 'Menticula';
+          color: #878787;
+          left: 50%;
+        }
+      }
+    }
+  }
+
+  & .responsive-menu {
+    img {
+      // display: none;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: $device-lg) {
+  .heaaderHome {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-top: 0;
+    & .content-config {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $device-md) {
+  .heaaderHome {
+    & .info-user-content {
+      width: 95%;
+      & .info-user {
+        & h1,
+        & h3 {
+          max-width: max-content;
+          overflow: initial;
+          white-space: initial;
+          text-overflow: initial;
+        }
+      }
+    }
+    & .content-config {
+      & ul {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .heaaderHome {
+    padding: 20px;
+    & .info-user-content {
+      & .info-user {
+        background-size: 100% 100%;
+        padding: 40px 30px 30px;
+        border-radius: 55px;
+        box-shadow: -5px 8px 15px -4px rgb(0 0 0 / 40%);
+        width: 90%;
+      }
+      & .photo-perfil {
+        list-style: none;
+        position: absolute;
+        right: -4%;
+        top: -5%;
+        transform: none;
+        & li > .profile {
+          border-radius: 50%;
+          height: 100px;
+          outline: 2px solid var(--primary-color--light);
+          background-color: #fff;
+          box-shadow: 2px 12px 15px -6px rgb(0 0 0 / 40%);
+        }
+      }
+    }
+    & .content-config {
+      & ul {
+        padding: 15px 20px 40px;
+      }
+    }
+  }
+}

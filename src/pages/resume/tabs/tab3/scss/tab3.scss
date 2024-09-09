@@ -1,0 +1,272 @@
+@import '../../../../../scss/configs/mixin-components.scss';
+@import '../../../../../scss/configs/breakpoints.scss';
+
+.tabThree {
+  padding: 15px 65px 200px;
+  &.small {
+    padding: 15px 65px 140px;
+  }
+  & h3.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    margin-bottom: 3px;
+  }
+  & .line-morado {
+    width: 55%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--primary-color--dark);
+    margin-bottom: 8px;
+  }
+  & h2.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: bold;
+    font-size: var(--font-size-md);
+  }
+  & .diplayflex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    & .content-circule {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      width: 65px;
+      background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+      border-radius: 50%;
+      & .circule-number {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
+    & .titleIngresarInfo {
+      font-size: var(--font-size-md);
+      color: #878787;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  & .display-linebreak {
+    font-size: var(--font-size-sm);
+    color: #878787;
+    font-weight: 400;
+    padding-left: 80px;
+  }
+  & .containerFormTable {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    justify-content: space-between;
+    & .main-card {
+      flex: 3;
+      & .ant-table {
+        border: 2px solid #b6b6b6;
+        border-radius: 5px;
+        background-color: transparent;
+        & .ant-table-thead {
+          & .ant-table-cell {
+            background: none;
+            border-bottom: 2px solid #b6b6b6;
+            background-color: transparent;
+            color: #878787;
+            font-size: 16px;
+            border-right: 2px solid #b6b6b6;
+            &:last-of-type {
+              border-right: none;
+            }
+          }
+        }
+        & .ant-table-tbody {
+          & .ant-table-row {
+            & .ant-table-cell {
+              color: #878787;
+              font-size: 15px;
+              border-bottom: 2px solid #b6b6b6;
+              border-right: 2px solid #b6b6b6;
+              max-width: 250px;
+              &:last-of-type {
+                border-right: none;
+              }
+              & .action-edit {
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                align-items: center;
+                color: var(--primary-color--light);
+                font-weight: 600;
+                font-size: 14px;
+                cursor: pointer;
+              }
+            }
+            &:hover {
+              & .ant-table-cell {
+                background: none;
+              }
+            }
+            &:last-of-type {
+              & .ant-table-cell {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .formAdd {
+      flex: 2;
+      & .titleIngresarInfo {
+        color: var(--primary-color--dark);
+        font-weight: 600;
+        font-size: var(--font-size-base);
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      & .spaceLabel {
+        & .ant-form-item-required {
+          font-size: 15px;
+          color: #878787;
+          font-weight: 500;
+        }
+        & .ant-form-item-control {
+          width: 100%;
+          flex: 1;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  & .ant-btn {
+    padding: 18px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 6px #00000029;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: auto;
+    gap: 10px;
+    &:hover {
+      background-image: none;
+      background-color: var(--primary-color--light);
+    }
+    & .icon,
+    & .icon path {
+      @include icon(#fff, 12px);
+      // margin-right: 4px;
+    }
+
+    & .btnSave {
+      margin-top: 20px;
+      float: right;
+      font-size: 16px;
+      font-weight: 700;
+      background-image: linear-gradient(180deg, #1ba5fb 0%, #105efb 100%);
+    }
+  }
+
+  & .containerTables {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    & .header-page {
+      flex: 2;
+      & h6 {
+        font-size: var(--font-size-md);
+        color: #878787;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      & .main-card {
+        & .ant-table {
+          border: 2px solid #b6b6b6;
+          border-radius: 5px;
+          background-color: transparent;
+          & .ant-table-thead {
+            & .ant-table-cell {
+              background: none;
+              border-bottom: 2px solid #b6b6b6;
+              background-color: transparent;
+              color: #878787;
+              font-size: var(--font-size-sm);
+              &:first-of-type {
+                border-right: 2px solid #b6b6b6;
+              }
+            }
+          }
+          & .ant-table-tbody {
+            & .ant-table-row {
+              & .ant-table-cell {
+                color: #878787;
+                font-size: 15px;
+                border-bottom: 2px solid #b6b6b6;
+                &:has(.bold) {
+                  text-align: end;
+                }
+                &:first-of-type {
+                  border-right: 2px solid #b6b6b6;
+                  font-size: 12px;
+                  & .bold {
+                    font-size: 16px;
+                    font-weight: 600;
+                  }
+                }
+              }
+              &:hover {
+                & .ant-table-cell {
+                  background: none;
+                }
+              }
+              &:last-of-type {
+                & .ant-table-cell {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-md) {
+  .tabThree {
+    & .containerFormTable {
+      flex-direction: column;
+    }
+    & .ant-btn {
+      margin-top: 30px;
+    }
+    & .containerTables {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .tabThree {
+    padding: 0 20px 50px;
+    &.small {
+      padding: 0 20px 50px;
+      & .display-linebreak {
+        margin-top: 20px;
+      }
+    }
+    & .display-linebreak {
+      padding-left: 0;
+    }
+    & .diplayflex {
+      & .content-circule {
+        height: 55px;
+        width: 55px;
+        min-height: 55px;
+        min-width: 55px;
+      }
+    }
+  }
+}

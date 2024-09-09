@@ -1,0 +1,130 @@
+@import '../../../scss/configs/breakpoints.scss';
+
+.ant-modal-wrap:has(.modalAdvisory) {
+  z-index: 2000;
+  & .modalAdvisory {
+    & .ant-modal-content {
+      width: auto !important;
+      padding: 24px 30px 40px;
+      & .ant-modal-close {
+        top: 18px;
+        right: -11px;
+        background-color: #c62626;
+        border-radius: 50%;
+        & .ant-modal-close-x {
+          font-size: 12px;
+          color: #fff;
+        }
+        &:hover {
+          background-color: #c62626;
+        }
+      }
+      & .ant-modal-body {
+        & .modalAdvisory-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          & h6 {
+            font-size: var(--font-size-md);
+            font-weight: bold;
+            color: #6f6f6f;
+            margin: 0;
+          }
+          & .information {
+            font-size: var(--font-size-sm);
+            color: #878787;
+            font-weight: 400;
+          }
+          & .ant-form {
+            width: 100%;
+            & .ant-form-item {
+              margin-bottom: 14px;
+              & .ant-select-selector {
+                & .ant-select-selection-item,
+                & .ant-select-selection-placeholder {
+                  // font-size: 1px;
+                  font-weight: 400;
+                  text-align: left;
+                  color: #878787;
+                  font-size: var(--font-size-sm);
+                }
+              }
+
+              & .ant-input {
+                // font-size: 15px;
+                color: #878787;
+                font-size: var(--font-size-sm);
+                padding: 3px 11px;
+                border-radius: 50px;
+                font-family: 'Menticula';
+                &::placeholder {
+                  font-size: 13px;
+                  font-weight: 300;
+                  text-align: left;
+                  // color: #878787;
+                }
+              }
+              &.containerCheck {
+                display: flex;
+                justify-content: center;
+                & .ant-form-item-control-input-content {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 7px;
+                  & .text {
+                    color: #8c8c8c;
+                    font-size: 9px;
+                    border-bottom: 1px solid #8c8c8c;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            & .containerButtons {
+              position: absolute;
+              margin: 0;
+              bottom: -15px;
+              width: 100%;
+              left: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & .ant-btn {
+                border: none;
+                font-weight: bold;
+                width: auto;
+                height: auto;
+                border-radius: 7px;
+                background-color: var(--primary-color--light);
+                color: white;
+                font-size: var(--font-size-base);
+                // margin: 0px 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover {
+                  color: #ffad02;
+                }
+                & span {
+                  padding: 3px 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-select-item.optionCallMe {
+  & .ant-select-item-option-content {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    color: #878787;
+    // padding-right: 20px;
+  }
+}

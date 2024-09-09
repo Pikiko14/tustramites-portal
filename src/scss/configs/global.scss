@@ -1,0 +1,70 @@
+@import '../configs/breakpoints.scss';
+
+.icon,
+.icon path {
+  height: 20px;
+  width: 20px;
+  fill: var(--primary-color--light);
+  transition: all 0.1s ease;
+  &.not-fill,
+  &.not-fill path {
+    fill: none;
+  }
+}
+
+.ant-btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.ant-input-affix-wrapper,
+.ant-input-number {
+  &-status-error {
+    & .ant-input,
+    & .ant-input-number-input {
+      caret-color: #c62626;
+    }
+  }
+}
+
+.ant-input,
+.ant-input-number-input {
+  caret-color: var(--primary-color--light);
+  font-family: 'Menticula';
+}
+
+.ant-form-item-explain.ant-form-item-explain-connected {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  align-items: center;
+  min-height: 10px;
+  & .ant-form-item-explain-error {
+    color: #c62626;
+  }
+}
+
+.ant-checkbox {
+  & .ant-checkbox-inner {
+    border-radius: 4px;
+  }
+}
+
+.ant-modal-root {
+  & .ant-modal-mask {
+    backdrop-filter: blur(2px);
+  }
+}
+
+@media screen and (max-width: $device-xs) {
+  .ant-tabs-nav-wrap.ant-tabs-nav-wrap-ping-right {
+    justify-content: flex-start !important;
+  }
+}

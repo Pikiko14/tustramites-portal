@@ -1,0 +1,23 @@
+@import './configs/global.scss';
+@import './configs/config-font.scss';
+
+:root {
+  --primary-color--light: #8556ee;
+  --primary-color--dark: #611ced;
+  --secondary-color-light: #f4b207;
+  --font-size-sm: clamp(0.8rem, calc(0.15vw + 0.76rem), 0.89rem);
+  --font-size-base: clamp(1rem, calc(0.31vw + 0.92rem), 1.19rem);
+  --font-size-md: clamp(1.25rem, calc(0.54vw + 1.11rem), 1.58rem);
+  --font-size-lg: clamp(1.56rem, calc(0.89vw + 1.34rem), 2.11rem);
+  --font-size-xl: clamp(1.95rem, calc(1.4vw + 1.6rem), 2.81rem);
+  --font-size-xxl: clamp(2.44rem, calc(2.14vw + 1.91rem), 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, calc(3.18vw + 2.26rem), 5rem);
+}
+
+* {
+  font-family: 'Menticula';
+  &::selection {
+    color: #fff;
+    background: var(--primary-color--light);
+  }
+}

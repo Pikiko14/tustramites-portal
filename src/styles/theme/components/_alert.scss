@@ -1,0 +1,125 @@
+.modal-alert {
+  .modal-content {
+    max-width: 400px;
+    background-color: white;
+    .alert-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .alert-content {
+      text-align: center;
+
+      .alert-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .alert-message {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .success {
+    .btn-large {
+      background-color: #4caf50;
+    }
+    .outline {
+      background-color: white;
+      color: #4caf50;
+      border-color: #4caf50;
+    }
+    .MuiAlert-icon {
+      color: #4caf50;
+    }
+  }
+  .info {
+    .btn-large {
+      background-color: #2196f3;
+    }
+    .outline {
+      background-color: white;
+      color: #2196f3;
+      border-color: #2196f3;
+    }
+    .MuiAlert-icon {
+      color: #2196f3;
+    }
+  }
+  .warning {
+    .btn-large {
+      background-color: #ff9800;
+    }
+    .outline {
+      background-color: white;
+      color: #ff9800;
+      border-color: #ff9800;
+    }
+    .MuiAlert-icon {
+      color: #ff9800;
+    }
+  }
+  .error {
+    .btn-large {
+      background-color: #f44336;
+    }
+    .outline {
+      background-color: white;
+      color: #f44336;
+      border-color: #f44336;
+    }
+    .MuiAlert-icon {
+      color: #f44336;
+    }
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 10px;
+    .content {
+      padding: 15px 15px;
+      height: initial;
+      min-height: initial;
+      max-height: initial;
+      img {
+        margin: 10px 0px;
+      }
+      .alert-content {
+        margin: 10px 0px;
+      }
+      .alert-buttons {
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
+        .btn-large {
+          margin-top: 10px;
+          font-weight: bold;
+          padding: 5px 10px;
+          border-radius: 5px;
+          color: white;
+          margin: 0px 5px;
+        }
+
+        .outline {
+          background-color: transparent;
+          border: 1px solid gray;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.react-confirm-alert-overlay {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 10000000 !important;
+}

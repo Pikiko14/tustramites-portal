@@ -1,0 +1,156 @@
+@import '../../../../../scss/configs/breakpoints.scss';
+
+.tabTwo {
+  padding: 15px 65px 100px;
+  & h3.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    margin-bottom: 3px;
+  }
+  & .line-morado {
+    width: 55%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--primary-color--dark);
+    margin-bottom: 8px;
+  }
+  & h2.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: bold;
+    font-size: var(--font-size-md);
+  }
+  & .diplayflex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    & .content-circule {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      width: 65px;
+      background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+      border-radius: 50%;
+      & .circule-number {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
+    & .titleIngresarInfo {
+      font-size: var(--font-size-md);
+      color: #878787;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  & .ant-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    & .ant-form-item-label {
+      overflow: visible;
+      white-space: normal;
+      & .ant-form-item-required,
+      & label {
+        font-size: 15px;
+        color: #878787;
+        font-weight: 500;
+      }
+    }
+    & .ant-form-item-control-input-content {
+      & .ant-input-affix-wrapper {
+        & .ant-input {
+          color: #878787;
+        }
+      }
+    }
+    &.formThree {
+      margin-top: 40px;
+      padding: 0 70px;
+      & .gapRow {
+        gap: 20px;
+        flex-wrap: nowrap;
+        & .mini {
+          flex: 2;
+        }
+        & .large {
+          flex: 6;
+        }
+        & .medium {
+          flex: 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-md) {
+  .tabTwo {
+    & .ant-form {
+      &:first-of-type {
+        & .spaceLabel {
+          & .ant-col {
+            &:first-of-type {
+              max-width: 15%;
+            }
+            &:last-of-type {
+              max-width: 85%;
+            }
+          }
+        }
+      }
+      &.formThree {
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .tabTwo {
+    padding: 0 20px 50px;
+    & .diplayflex {
+      & .content-circule {
+        height: 55px;
+        width: 55px;
+        min-height: 55px;
+        min-width: 55px;
+      }
+    }
+    & .ant-form {
+      &:first-of-type {
+        & .spaceLabel {
+          & .ant-row {
+            flex-direction: column;
+            & .ant-col {
+              &:first-of-type {
+                max-width: 100%;
+              }
+              &:last-of-type {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+      &.formThree {
+        & .gapRow {
+          flex-direction: column;
+          gap: 0;
+          & .mini {
+            margin-bottom: 0;
+          }
+          &:last-of-type {
+            & .mini {
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

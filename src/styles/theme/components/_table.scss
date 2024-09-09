@@ -1,0 +1,42 @@
+.ant-table {
+    .ant-table-content {
+        overflow-x: auto;
+    }
+}
+
+.ant-table-cell {
+    color: rgba(0,0,0, 0.54);
+    font-size: 0.8rem;
+    a {
+        color: rgba(0,0,0, 0.54);
+    }
+}
+
+.action-edit {
+    svg {
+        color: $primary;
+    }
+}
+
+.action-delete {
+    svg {
+        color: $primary;
+    }
+}
+
+/* PAGINATION */
+.ant-pagination {
+    padding: 0px 20px;
+}
+
+.ant-pagination-item-active {
+	border-color: $primary !important;
+}
+
+.ant-pagination-item-active a {
+	color: $primary;
+}
+
+.ant-pagination-item-active a:hover {
+	color: $primary;
+}

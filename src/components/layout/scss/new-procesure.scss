@@ -1,0 +1,56 @@
+@import '../../../scss/configs/breakpoints.scss';
+
+.content-add-tramite {
+  display: flex;
+  flex-direction: row;
+  padding: 0 65px;
+  align-items: center;
+  margin-bottom: 20px;
+  & .button-nuevo-tramite {
+    background-image: linear-gradient(180deg, #9a44f6 0%, #7531f3 61%);
+    padding: 20px 30px;
+    border-radius: 15px;
+    flex: 3;
+    z-index: 10;
+    box-shadow: 6px 6px 15px -3px rgb(0 0 0 / 20%);
+    // cursor: pointer;
+    & .centrarVerHor {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      & .icon,
+      & .icon path {
+        @include icon(#fff, 15px);
+        stroke: #fff;
+      }
+      & span {
+        &:last-of-type {
+          color: #fff;
+          font-weight: 500;
+          font-size: var(--font-size-md);
+        }
+      }
+    }
+  }
+  & .input-tramite {
+    height: 60px;
+    flex: 7;
+    background: #fff;
+    position: relative;
+    right: 10px;
+    border-radius: 0 10px 10px;
+    box-shadow: 6px 6px 15px -3px rgb(0 0 0 / 20%);
+    & .notificacion-movil {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .content-add-tramite {
+    & .button-nuevo-tramite {
+      flex: 35 1;
+    }
+  }
+}

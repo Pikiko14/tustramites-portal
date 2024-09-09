@@ -1,0 +1,64 @@
+@import './drawer-menu.scss';
+@import './header.scss';
+@import './new-procesure.scss';
+@import './help-float.scss';
+@import '../../../scss/configs/breakpoints.scss';
+@import '../../../scss/configs/mixin-components.scss';
+
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  @include scrollCustom();
+  &-content {
+    margin-left: 17.7vw;
+    width: 100%;
+    &-center {
+      margin: auto;
+      max-width: 1300px;
+    }
+    & .responsive-menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $device-xl) {
+  .layout {
+    &-content {
+      margin-left: 360px;
+    }
+  }
+}
+
+@media screen and (max-width: $device-lg) {
+  .layout {
+    &-content {
+      margin-left: 0;
+      & .responsive-menu {
+        display: flex;
+        position: absolute;
+        top: 35px;
+        z-index: 1000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .layout {
+    &-content {
+      & .responsive-menu {
+        top: 40px;
+      }
+    }
+  }
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}

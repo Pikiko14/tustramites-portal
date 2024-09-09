@@ -1,0 +1,14 @@
+.header-page {
+    & .title-btn {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        & .btn-create {
+            font-size: var(--font-size-md);
+            background: linear-gradient(180deg, #9a44f6 0%, #7531f3 61%);
+            border-radius: 10px;
+            font-weight: 600;
+            width: 150px;
+        }
+    }
+}

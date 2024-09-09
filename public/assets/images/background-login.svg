@@ -1,0 +1,107 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="-564.61 -1.22 3050.71 1172.43"
+>
+    <defs>
+        <linearGradient
+            id="linear-gradient"
+            y1="0.5"
+            x2="1"
+            y2="0.5"
+            gradientUnits="objectBoundingBox"
+        >
+            <stop offset="0" stop-color="#9656ee"></stop>
+            <stop offset="1" stop-color="#7339ee"></stop>
+        </linearGradient>
+        <linearGradient
+            id="linear-gradient-3"
+            x1="0.5"
+            x2="0.5"
+            y2="1"
+            gradientUnits="objectBoundingBox"
+        >
+            <stop offset="0" stop-color="#eca8ef" stop-opacity="0.553"></stop>
+            <stop offset="1" stop-color="#bd8fc1" stop-opacity="0.063"></stop>
+        </linearGradient>
+        <linearGradient
+            id="linear-gradient-4"
+            x1="-0.868"
+            y1="0.5"
+            x2="1.224"
+            y2="0.5"
+            gradientUnits="objectBoundingBox"
+        >
+            <stop offset="0" stop-color="#fff"></stop>
+            <stop offset="1" stop-color="#9269ed" stop-opacity="0.635"></stop>
+        </linearGradient>
+    </defs>
+    <g
+        id="Enmascarar_grupo_1072"
+        data-name="Enmascarar grupo 1072"
+        transform="translate(0 -5500)"
+        clip-path="url(#clip-path)"
+    >
+        <g id="Grupo_4719" data-name="Grupo 4719" transform="translate(-564.615 5498.777)">
+            <g id="Grupo_4715" data-name="Grupo 4715" transform="translate(0 0.161)">
+                <rect
+                    id="Rectángulo_779"
+                    data-name="Rectángulo 779"
+                    width="3050.711"
+                    height="1171.508"
+                    transform="translate(0 0)"
+                    fill="url(#linear-gradient)"
+                ></rect>
+                <rect
+                    id="Rectángulo_780"
+                    data-name="Rectángulo 780"
+                    width="3050.711"
+                    height="1171.508"
+                    transform="translate(0 0)"
+                    fill="url(#linear-gradient)"
+                ></rect>
+            </g>
+            <g
+                id="Grupo_4716"
+                data-name="Grupo 4716"
+                transform="translate(711.721 144.568)"
+                opacity="0.538"
+            >
+                <path
+                    id="Trazado_4654"
+                    data-name="Trazado 4654"
+                    d="M1192.262,86.327C1509.919,45.62,1936,235.971,2338.15,325.632v782.321H0C460.039,821.812,563.337,166.918,1192.262,86.327Z"
+                    transform="translate(0 -80.697)"
+                    opacity="0.7"
+                    fill="url(#linear-gradient-3)"
+                    style="mix-blend-mode: overlay; isolation: isolate"
+                ></path>
+            </g>
+            <g id="Grupo_4717" data-name="Grupo 4717" transform="translate(0 0)">
+                <path
+                    id="Trazado_4655"
+                    data-name="Trazado 4655"
+                    d="M1847.1,836.079C1318.042,742.291,1020,295.617,658.824,0H0V1172.434H3050.06V419.473C2646.56,637.179,2248.725,907.276,1847.1,836.079Z"
+                    opacity="0.4"
+                    fill="url(#linear-gradient-4)"
+                    style="mix-blend-mode: overlay; isolation: isolate"
+                ></path>
+            </g>
+            <g
+                id="Grupo_4718"
+                data-name="Grupo 4718"
+                transform="translate(0 38.128)"
+                opacity="0.393"
+            >
+                <path
+                    id="Trazado_4656"
+                    data-name="Trazado 4656"
+                    d="M1653.339,823.412C976.944,800.248,553.718,180.486,0,21.991V1155.724H3050.06V47.622C2580.7,321.814,2171.646,841.162,1653.339,823.412Z"
+                    transform="translate(0 -21.991)"
+                    fill="#8556ee"
+                    style="mix-blend-mode: overlay; isolation: isolate"
+                ></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,300 @@
+@import "../../../scss/configs/breakpoints.scss";
+
+.notarialStepThree {
+  padding: 50px 50px 150px;
+  & .map-section {
+    width: 100% !important;
+    height: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.115);
+    border-radius: 30px;
+  }
+  & .content-add-tramite {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  & .containerProcedure-info {
+    & .categories {
+      & h3.title-indicaciones {
+        color: var(--primary-color--dark);
+        font-weight: 600;
+        font-size: var(--font-size-base);
+        margin-bottom: 3px;
+      }
+      & .line-morado {
+        width: 55%;
+        height: 2px;
+        border-radius: 10px;
+        background-color: var(--primary-color--dark);
+        margin-bottom: 8px;
+      }
+      & h2.title-indicaciones {
+        color: var(--primary-color--dark);
+        font-weight: bold;
+        font-size: var(--font-size-md);
+      }
+      & .diplayflex {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 30px;
+        align-items: center;
+        & .content-circule {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 65px;
+          width: 65px;
+          background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+          border-radius: 50%;
+          & .circule-number {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 800;
+          }
+        }
+        & .titleIngresarInfo {
+          font-size: var(--font-size-md);
+          color: #878787;
+          font-weight: 700;
+          margin: 0;
+        }
+      }
+    }
+  }
+  & .selected-place {
+    padding-left: 85px;
+    color: #878787;
+    font-size: 14pt;
+  }
+  & .ant-form {
+    & .info-user {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 20px;
+      background-size: cover;
+      padding: 20px;
+      & .titleNotariaCercana {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: var(--primary-color--light);
+        font-weight: 700;
+        font-size: var(--font-size-lg);
+        text-align: left;
+        padding-left: 35px;
+        line-height: 30px;
+      }
+      & .containerSelects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & .selectNotariaCercana {
+          margin: 0;
+          width: 80%;
+          & .ant-select-selector {
+            height: 43px;
+            align-items: center;
+            & .ant-select-selection-placeholder,
+            & .ant-select-selection-item {
+              font-size: var(--font-size-base);
+              font-weight: 500;
+              text-align: center;
+              color: #878787;
+            }
+          }
+        }
+      }
+    }
+    & .title-indicaciones {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: var(--primary-color--light);
+      font-weight: 700;
+      font-size: var(--font-size-md);
+    }
+    & .containerNotaries {
+      margin-top: 10px;
+      flex-flow: row;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      & > .ant-form-item {
+        width: 50%;
+        padding: 8px 60px 24px;
+        margin: 0;
+        &:nth-child(odd) {
+          border-right: 1px solid #878787;
+        }
+        &:nth-child(n + 3) {
+          border-top: 1px solid #878787;
+          padding-top: 25px;
+        }
+        & .contentNotarias {
+          & .colorGray.sinMargen.fuenteBold.displayFlex {
+            display: flex;
+            flex-direction: row;
+            color: #878787;
+            align-items: center;
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            margin-bottom: 2px;
+            & .ant-form-item.radioBtn {
+              margin: 0;
+              padding-left: 10px;
+              // color: #707070;
+              & .ant-radio-inner {
+                width: 28px;
+                height: 27px;
+                // border-color: #707070;
+                background-color: transparent;
+                border-width: 3px;
+                &::after {
+                  background-color: var(--primary-color--light);
+                  transform: scale(0.75);
+                }
+              }
+            }
+          }
+          & .colorGray {
+            color: #878787;
+            font-size: var(--font-size-sm);
+            font-weight: 400;
+            &:nth-child(3),
+            &:nth-child(4) {
+              margin: 0;
+            }
+            &:nth-child(4) {
+              white-space: pre-line;
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+    & .containerButtonFinished {
+      display: flex;
+      margin-top: 60px;
+      justify-content: flex-end;
+      & .ant-form-item {
+        margin: 0;
+      }
+      & .ant-form-item-control-input-content {
+        display: flex;
+        gap: 20px;
+        & .ant-btn {
+          padding: 18px 20px;
+          border-radius: 25px;
+          box-shadow: 0px 3px 6px #00000029;
+          font-size: var(--font-size-base);
+          font-weight: 700;
+          transition: all 0.3s ease;
+          &:hover {
+            background-image: none;
+            background-color: var(--primary-color--light);
+          }
+        }
+        & .btnSave {
+          background-image: linear-gradient(180deg, #1ba5fb 0%, #105efb 100%);
+        }
+        & .btnContinuar {
+          background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+          color: var(--primary-color--light);
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-select-item.optionStepThree {
+  & .ant-select-item-option-content {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    color: #878787;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: $device-md) {
+  .notarialStepThree {
+    & .ant-form {
+      & .info-user {
+        & .titleNotariaCercana {
+          justify-content: center;
+          padding: 0;
+          text-align: center;
+        }
+        & .ant-row {
+          justify-content: center;
+        }
+        & .ant-col-md-6 {
+          max-width: none;
+          flex: auto;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .notarialStepThree {
+    padding: 25px 25px 150px;
+    & .containerProcedure-info {
+      & .categories {
+        & .diplayflex {
+          & .content-circule {
+            height: 55px;
+            width: 55px;
+            min-height: 55px;
+            min-width: 55px;
+          }
+        }
+      }
+    }
+    & .ant-form {
+      & .info-user {
+        & .containerSelects {
+          flex: auto;
+          max-width: none;
+          width: 100%;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+        .ant-row {
+          row-gap: 0px !important;
+        }
+      }
+      & .containerNotaries {
+        flex-flow: column;
+        & img {
+          width: 100%;
+          height: 50px;
+        }
+        & > .ant-form-item {
+          width: 100%;
+          &:nth-child(odd) {
+            border-right: none;
+          }
+          &:nth-child(n + 2) {
+            border-top: 1px solid #878787;
+            padding-top: 25px;
+          }
+        }
+      }
+      & .containerButtonFinished {
+        justify-content: center;
+        & .ant-form-item-control-input-content {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

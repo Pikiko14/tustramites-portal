@@ -1,0 +1,232 @@
+@import '../../../scss/configs/breakpoints.scss';
+
+.homeManager {
+  padding: 0 65px 100px;
+  & .header-page {
+    & .firstContainer {
+      margin-bottom: 30px;
+      & .ant-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: row;
+        gap: 50px;
+        & .panelEstadisticaTitulo {
+          display: none;
+        }
+        & .panelEstadistica {
+          background-size: cover;
+          padding: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 180px;
+          // width: 180px;
+          flex: 2;
+          border-radius: 20px;
+          box-shadow: 0px 3px 6px #00000029;
+          flex-direction: column;
+          gap: 12px;
+          & .colorBlanco {
+            color: #fff;
+            font-weight: 600;
+            font-size: var(--font-size-md);
+            text-align: center;
+            margin: 0;
+          }
+          & .totalSolicitud {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            & .sinMargen {
+              color: #fff;
+              font-weight: 600;
+              font-size: var(--font-size-md);
+              margin: 0;
+              margin-block: 0;
+            }
+          }
+        }
+        & table {
+          flex: 10;
+          background-color: #fff;
+          box-shadow: 0px 3px 6px #00000029;
+          border-radius: 20px;
+          & .ant-table-thead {
+            & .ant-table-cell {
+              font-size: var(--font-size-sm);
+              color: var(--primary-color--light);
+              padding: 18px 10px 15px;
+              text-align: center;
+            }
+          }
+          & .ant-table-tbody {
+            & .ant-table-cell {
+              // height: 20px;
+              font-size: var(--font-size-sm);
+              padding: 0 5px;
+              text-align: center;
+              color: #777777;
+              font-weight: 400;
+              &.btn-action {
+                padding: 0 20px;
+                & .action-delete {
+                  font-size: var(--font-size-sm);
+                  background-color: var(--primary-color--light);
+                  padding: 4px 10px;
+                  border-radius: 9px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 6px;
+                  color: #fff;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & .secondContainer {
+      margin-bottom: 30px;
+      & .ant-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: row;
+        gap: 50px;
+        &.revertTables {
+          flex-direction: row-reverse;
+        }
+        & .ant-col {
+          flex: 1;
+          max-width: none;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          & .panelEstadistica {
+            background-size: cover;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            box-shadow: 0px 3px 6px #00000029;
+            gap: 12px;
+            & .colorBlanco {
+              color: #fff;
+              font-weight: 600;
+              font-size: var(--font-size-md);
+              text-align: center;
+              margin: 0;
+            }
+            & .totalSolicitud {
+              border: 2px solid #fff;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 35px;
+              height: 35px;
+              & .sinMargen {
+                color: #fff;
+                font-weight: 600;
+                font-size: var(--font-size-md);
+                margin: 0;
+                margin-block: 0;
+              }
+            }
+          }
+          & table {
+            background-color: #fff;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 20px;
+            & .ant-table-thead {
+              &.yellow {
+                & .ant-table-cell {
+                  color: #fe9f17;
+                }
+              }
+              & .ant-table-cell {
+                font-size: var(--font-size-sm);
+                color: var(--primary-color--light);
+                padding: 18px 10px 15px;
+                text-align: center;
+              }
+            }
+            & .ant-table-tbody {
+              & .ant-table-cell {
+                // height: 20px;
+                font-size: var(--font-size-sm);
+                padding: 0 5px;
+                text-align: center;
+                color: #777777;
+                font-weight: 400;
+                &.btn-action {
+                  padding: 0 20px;
+                  & .action-delete {
+                    background-color: var(--primary-color--light);
+                    padding: 4px 10px;
+                    border-radius: 9px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 6px;
+                    color: #fff;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-md) {
+  .homeManager {
+    & .header-page {
+      & .firstContainer {
+        & .ant-row {
+          flex-flow: column;
+          gap: 35px;
+          &.panelEstadistica {
+            flex-direction: row;
+          }
+          & table {
+            display: block;
+            overflow-x: overlay;
+          }
+        }
+      }
+      & .secondContainer {
+        & .ant-row {
+          flex-flow: column;
+          gap: 35px;
+          &.revertTables {
+            flex-direction: column;
+          }
+          & table {
+            display: block;
+            overflow-x: overlay;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .homeManager {
+    padding: 0 20px 0px;
+  }
+}

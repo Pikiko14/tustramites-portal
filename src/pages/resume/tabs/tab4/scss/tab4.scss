@@ -1,0 +1,122 @@
+@import '../../../../../scss/configs/mixin-components.scss';
+
+.tabFour {
+  padding: 15px 65px 200px;
+  & h3.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  & .line-morado {
+    width: 55%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--primary-color--dark);
+    margin-bottom: 8px;
+  }
+  & h2.title-indicaciones {
+    color: var(--primary-color--dark);
+    font-weight: bold;
+    font-size: 26px;
+  }
+  & .diplayflex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    & .content-circule {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      width: 65px;
+      background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+      border-radius: 50%;
+      & .circule-number {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
+    & .titleIngresarInfo {
+      font-size: 22px;
+      color: #878787;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  & .ant-form {
+    & .displayFlex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      & .contenedorFiles {
+        & .colorGray {
+          margin: 0;
+          font-size: 15px;
+          color: #878787;
+          font-weight: 500;
+        }
+      }
+      & .ant-upload-wrapper {
+        // margin-bottom: 15px;
+        & .ant-btn {
+          padding: 18px 20px;
+          border-radius: 25px;
+          box-shadow: 0px 3px 6px #00000029;
+          font-size: 15px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          &:hover {
+            background-image: none;
+            background-color: var(--primary-color--light);
+          }
+        }
+        & .icon,
+        & .icon path {
+          @include icon(#fff, 12px);
+        }
+
+        & .btnSave {
+          color: #fff;
+          // margin-top: 20px;
+          float: right;
+          font-size: 16px;
+          font-weight: 700;
+          background-image: linear-gradient(180deg, #1ba5fb 0%, #105efb 100%);
+        }
+      }
+    }
+    & .ant-btn {
+      padding: 18px 20px;
+      border-radius: 25px;
+      box-shadow: 0px 3px 6px #00000029;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-image: none;
+        background-color: var(--primary-color--light);
+      }
+    }
+    & .icon,
+    & .icon path {
+      @include icon(#fff, 14px);
+    }
+    & .btnContinuar {
+      float: right;
+      color: #fff;
+      font-weight: 700;
+      background-image: linear-gradient(180deg, #feb933 0%, #fd9428 76%);
+      color: var(--primary-color--light);
+      & .span {
+        margin-inline-start: 0;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,730 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f6f7f9;
+}
+
+@font-face {
+  font-family: 'Menticula';
+  src: url(./font/MeticulaRegular.otf);
+}
+
+@font-face {
+  font-family: 'Menticula';
+  src: url(./font/MeticulaBold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Menticula';
+  src: url(./font/MeticulaMedium.otf);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+button,
+input,
+span {
+  font-family: 'Menticula' !important;
+}
+
+.displayFlex {
+  display: flex;
+}
+.ant-menu-item-selected {
+  border-radius: 10px !important;
+  margin: 0 auto !important;
+  width: 90% !important;
+  background-color: #b965f5 !important;
+}
+
+.layout .drawer {
+  width: 300px !important;
+}
+.ant-menu-item {
+  margin: 0 auto !important;
+  width: 90% !important;
+  padding: 35px 30px !important;
+}
+// **************** principal *********************
+
+.info-user {
+  //background-image: url("../assets/images/back.jpeg");
+  //background-color: #884bee;
+  background-size: 100% 100%;
+  padding: 15px 30px;
+  border-radius: 20px;
+  //height: 120px;
+
+  h1,
+  h6 {
+    color: white;
+  }
+}
+
+.info-user-content {
+  display: flex;
+  margin: 35px 0px;
+  width: inherit;
+}
+
+.content-config {
+  display: flex;
+  margin: 35px 0px;
+}
+
+.input-tramite {
+  left: -8px;
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  //padding: 6.5px 11px;
+  min-height: 37px;
+  display: flex;
+  justify-content: end;
+}
+.list-indicaciones {
+  list-style: disc !important;
+}
+.circule {
+  background-image: linear-gradient(to top, #fd9627 0%, #feb834 100%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  margin: 44px auto 0px;
+}
+
+.margeTop {
+  margin: 36px auto 0px;
+}
+.margeBottom {
+  margin: 0px auto 44px;
+}
+.centrar-text {
+  display: block;
+  text-align: center;
+}
+.letraCirculos {
+  font-size: smaller;
+  font-weight: bold;
+  color: gray;
+}
+.title-indicaciones {
+  color: #783def !important;
+  font-weight: bold;
+}
+.subtitle-indicaciones {
+  color: gray;
+}
+.line {
+  background: #fd9627;
+  height: 2px;
+  width: 100px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.circule-number {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+.button-tramite {
+  z-index: 10;
+  border-radius: 10px !important;
+  height: 50px;
+  background-image: linear-gradient(to top, #7a33f3 0%, #9c4bf5 100%);
+  color: white;
+}
+.button-tramite:hover {
+  color: white !important;
+  background-color: $primary !important;
+}
+.centrarVerHor {
+  margin: auto;
+}
+.button-nuevo-tramite {
+  z-index: 10;
+  border-radius: 10px !important;
+  background-image: linear-gradient(to top, #7a33f3 0%, #9c4bf5 100%);
+  color: white;
+  display: flex;
+  width: 170px;
+}
+
+.content-add-tramite {
+  display: flex;
+  min-height: 50px;
+}
+
+.centrar-wisard {
+  display: flex;
+  justify-content: center;
+}
+.photo-perfil {
+  margin-left: -55px;
+  .notificacion {
+  }
+}
+.profile {
+  border: 2px solid #884bee;
+  background: white;
+}
+
+.list-indicaciones li h5,
+.indicaciones {
+  color: gray;
+}
+
+.icon-card {
+  width: 100px;
+  height: 50px;
+  margin: 20px 10px 5px 10px;
+}
+
+.card-tramite {
+  width: 210px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px grey;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  margin: 10px 10px 0px 10px;
+}
+.card-tramite-active {
+  background: linear-gradient(to top, #7a33f3 0%, #9c4bf5 70%, #9c4bf5 100%);
+  width: 210px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px grey;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 10px 0px 10px;
+
+  h3 {
+    color: white !important;
+  }
+}
+.col-tramites {
+  display: flex;
+  //justify-content: center;
+  //text-align: center;
+  overflow-x: scroll;
+}
+.col-tramites::-webkit-scrollbar {
+  display: block;
+}
+.content-select {
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.margenWizard {
+  margin: 50px 0px;
+}
+
+.select-tramite {
+  width: 60% !important;
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+.select-tramite > div {
+  padding: 10px !important;
+  height: 50px !important;
+  border-radius: 10px !important;
+}
+
+.line-morado {
+  background: #7a33f3;
+  height: 2px;
+  width: 200px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.checkbox-aceptar {
+  font-size: xx-small;
+}
+.arrow {
+  height: 0;
+  width: 0;
+  border-top: 15px solid #7a33f3;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  //position: absolute;
+}
+.arrowButton {
+  height: 5px;
+  border-bottom: 8px solid transparent;
+  border-right: 7px solid $primary;
+  border-top: 8px solid transparent;
+}
+.arrowButton:hover {
+  height: 5px;
+  border-bottom: 8px solid transparent;
+  border-right: 7px solid $primary;
+}
+.content-button-tramite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrarArrow {
+  text-align: -webkit-center;
+  display: inline-block;
+}
+
+// css notaria *******************************
+.circule-notaria {
+  background-image: linear-gradient(to top, #fd9627 0%, #feb834 100%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+}
+
+.diplayflex {
+  display: flex;
+}
+
+.titleIngresarInfo {
+  margin: auto 15px;
+  color: gray;
+  font-weight: bold;
+}
+
+.input-dynamic {
+  border: 1px solid #bfbfbf !important;
+  border-radius: 15px !important;
+  height: 30px !important;
+  padding: 4px 8px !important;
+  //width: 90% !important;
+}
+
+
+
+.margeTituloActor {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.aling-end {
+  text-align: end;
+}
+.marginBotton {
+  margin-bottom: 10px;
+}
+
+.ant-form-item {
+  border: none !important;
+  padding: 0px !important;
+}
+
+.select {
+  border: 1px solid #bfbfbf !important;
+  border-radius: 15px !important;
+}
+
+.selectDynamic .ant-select-selector {
+  border-radius: 15px !important;
+  height: 30px !important;
+  padding: 4px 8px !important;
+}
+
+.btnContinuar {
+  background-image: linear-gradient(to top, #fd9627 0%, #feb834 100%);
+  color: #723bed !important;
+  border-color: #fd9627 !important;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.btnSave {
+  background-image: linear-gradient(to top, #5a8eee 0%, #5a8eee 100%);
+  color: #ffffff !important;
+  border-color: #5a8eee !important;
+  font-weight: bold;
+  margin-right: 1rem;
+  // margin-bottom: 2rem;
+}
+.colorGray {
+  color: gray !important;
+}
+.sinMargen {
+  margin: 0px !important;
+}
+
+.notaJuridica {
+  color: gray;
+  font-size: smaller;
+}
+//*********  step two************
+
+.textArea {
+  color: gray !important;
+  border: 1px solid #bfbfbf !important;
+  border-radius: 15px !important;
+  padding: 5px !important;
+}
+
+.panelFiles {
+  border: 1px dashed gray;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background: #f0f0f0;
+  margin-bottom: 10px;
+}
+.alinearFiles {
+  display: -webkit-inline-box;
+}
+.alineacionContinuar {
+  display: flex;
+  justify-content: end;
+}
+
+.margenSolicitar {
+  margin: 15px 20px;
+}
+
+.textoArrastrar {
+  font-size: xx-small;
+  text-align: left;
+}
+
+.tamAdjuntar {
+  width: 200px;
+  margin-left: 25px;
+  text-align: left;
+  margin-top: 25px;
+}
+
+//** step 3***
+
+.titleNotariaCercana {
+  margin: auto 15px;
+  color: #7a33f3;
+  font-weight: bold;
+}
+
+.selectNotaria {
+  text-align: center;
+  width: 95% !important;
+}
+
+.width95 {
+  width: 95% !important;
+}
+.fuenteBold {
+  font-weight: bold;
+}
+
+.bordeBottom {
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.borderRigth {
+  border-right: 1px solid #bfbfbf;
+}
+
+.contentNotarias {
+  margin: 20px;
+}
+
+.radioBtn {
+  margin: 0px 15px !important;
+}
+
+.selectNotariaCercana .ant-select-selector {
+  border-radius: 10px !important;
+  height: 30px !important;
+}
+
+.contenedorFiles {
+  // width: 104px;
+  height: 104px;
+  margin: 0 8px 8px 0;
+  vertical-align: top;
+  display: flex;
+}
+.cardFile {
+  position: relative;
+  // height: 66px;
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  margin: 0px 10px 0px 0px;
+}
+.cardFile:hover {
+  filter: blur();
+
+  .cardFileEdit {
+    position: absolute;
+    background: #723bed42;
+    opacity: 1;
+    width: 90%;
+    height: 90%;
+    left: 5px;
+    top: 5px;
+    transition: linear 0.2s;
+  }
+}
+.cardFileEdit {
+  opacity: 0;
+  position: absolute;
+}
+.nameDoc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.margen10 {
+  margin: 10px;
+}
+.marginEditDoc {
+  margin-top: 30px;
+}
+.ant-upload-list-picture-card-container {
+  display: none !important;
+}
+.spaceLabel .ant-form-item-label {
+  white-space: initial;
+}
+
+.spaceLabel .ant-form-item-label > label {
+  height: auto !important;
+}
+.btnVerActores {
+  margin-right: 10px;
+}
+
+.modalFinal .ant-modal-title {
+  text-align: center;
+}
+.modalFinal .ant-modal-header {
+  border: none;
+}
+.modalFinal .ant-modal-footer {
+  border: none;
+  text-align: center;
+}
+.btnSaveFinal {
+  color: #fd9627 !important;
+  border-color: #7a33f3 !important;
+  font-weight: bold;
+  top: 25px;
+  border-radius: 7px !important;
+}
+.display-linebreak {
+  white-space: pre-line;
+}
+.display-linebreak-gray {
+  white-space: pre-line;
+  color: gray;
+}
+
+.container-flux {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1550px;
+  padding: 0px 20px;
+}
+
+.panelEstadistica {
+  background-size: 100% 100%;
+  padding: 15px 30px;
+  border-radius: 7px;
+}
+.panelEstadisticaTitulo {
+  background-size: 100% 100%;
+  padding: 15px 30px;
+  height: 100%;
+  border-radius: 7px;
+}
+.padding10 {
+  padding: 10px;
+}
+
+.totalSolicitud {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+.totalSolicitud h3 {
+  margin-top: 5px !important;
+}
+.colorBlanco {
+  color: white;
+}
+.notificacion-movil {
+  display: none;
+}
+@media only screen and (max-width: $device-xl) {
+  .title-indicaciones {
+    font-size: small !important;
+  }
+  /*.card-tramite {
+		width: 175px !important;
+	}*/
+  .btnSave {
+    margin-right: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.drawer {
+  height: 100%;
+}
+
+@media only screen and (max-width: $device-lg) {
+  /*
+	.card-tramite {
+		width: 145px !important;
+	}*/
+  .btnSave {
+    margin-right: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: $device-md) {
+  .margeTop {
+    margin: 28px auto 0px !important;
+  }
+  .content-config {
+    display: none !important;
+  }
+  .notificacion {
+    display: none !important;
+  }
+  .notificacion-movil {
+    display: block;
+    padding: 5px 10px;
+    .ant-badge {
+      img {
+        width: 20px;
+      }
+    }
+  }
+  .circule {
+    width: 55px !important;
+    height: 55px !important;
+  }
+  .letraCirculos {
+    font-size: xx-small !important;
+  }
+  .btnSave {
+    margin-right: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+  /*
+	.icon-card {
+		width: 80px  !important;
+	}
+	.title-indicaciones {
+		font-size: x-small !important;
+	}
+	*/
+}
+
+@media only screen and (max-width: $device-sm) {
+  .margeTop {
+    margin: 28px auto 0px !important;
+  }
+  .content-config {
+    display: none !important;
+  }
+  .notificacion {
+    display: none !important;
+  }
+  .circule {
+    width: 55px !important;
+    height: 55px !important;
+  }
+  .letraCirculos {
+    font-size: xx-small !important;
+  }
+
+  .button-nuevo-tramite {
+    width: 260px !important;
+  }
+  /*.icon-card {
+		width: 40px  !important;
+		height: 40px  !important;
+	}
+
+	.title-indicaciones {
+		font-size: xx-small !important;
+	
+	}
+	.card-tramite {
+
+		padding: 5px !important;
+	
+	}
+*/
+  .card-tramite {
+    width: 170px !important;
+    padding: 20px 0px;
+  }
+  .card-tramite-active {
+    width: 170px !important;
+    padding: 20px 0px;
+  }
+
+  .select-tramite {
+    width: 90% !important;
+  }
+
+  .btnSave {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  .btnContinuar {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+}

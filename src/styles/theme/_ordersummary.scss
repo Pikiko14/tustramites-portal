@@ -1,0 +1,190 @@
+.page-title-o {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    margin: 40px 80px;
+
+    h1 {
+        font-weight: bold;
+        color: gray;
+        margin: 10px 40px;
+    }
+}
+
+.page-content-o {
+    //padding: 40px 20px;
+    //padding-bottom: 300px;
+    p {
+        margin: 20px 180px;
+        color: gray;
+    }
+}
+
+.table-o {
+    padding: 20px 20px;
+    justify-content: center;
+    margin: 20px 70px;
+    display: flex;
+    align-content: space-between;
+    .table-or {
+        .table-ori {
+            .main-card-table {
+                align-content: center;
+            }
+
+            .buttons-a {
+                button {
+                    min-width: 10rem;
+                    min-height: 1.5rem;
+                    background-image: linear-gradient(to top, #fd9627 0%, #feb834 100%);
+                    color: #723bed !important;
+                    border-color: #fd9627 !important;
+                    font-weight: bold;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+    .separator {
+        border-left: 3px solid gray;
+        margin: 0 5px;
+    }
+    .table-or2 {
+        .table-ori2 {
+            .main-card-table2 {
+                align-content: center;
+            }
+
+            .buttons-a2 {
+                button {
+                    min-width: 10rem;
+                    min-height: 1.5rem;
+                    background-image: linear-gradient(to top, #fd9627 0%, #feb834 100%);
+                    color: #723bed !important;
+                    border-color: #fd9627 !important;
+                    font-weight: bold;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    right: 150px;
+    .btnContinuar-o {
+        button {
+            min-width: 7rem;
+            min-height: 1.5rem;
+            background-image: linear-gradient(to top, #fd9627 0%, #feb834 100%);
+            color: #723bed !important;
+            border-color: #fd9627 !important;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+    }
+
+    .btnSave-o {
+        button {
+            min-width: 7rem;
+            min-height: 1.5rem;
+            background-image: linear-gradient(to top, #5a8eee 0%, #5a8eee 100%);
+            color: #ffffff !important;
+            border-color: #5a8eee !important;
+            font-weight: bold;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 30px;
+        }
+    }
+}
+
+.frequent-questions {
+    display: flex;
+    flex-direction: column;
+    .tree-root {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .tree-content {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .ant-collapse-content-box {
+        ul {
+            .active {
+                color: $primary;
+            }
+            li {
+                padding: 10px 0px;
+                border-bottom: 1px solid #ebebeb;
+                cursor: pointer;
+            }
+            li:hover {
+                border-bottom: 1px solid $primary;
+            }
+        }
+    }
+}
+.frequent-icon {
+    text-align: center;
+    .frequent-icon-title {
+        color: #9b9b9b;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 10px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 0px;
+                margin: 0px;
+                max-width: 100px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.main-card-table-order {
+    table {
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+          
+    }  
+}
+
+.buttons-a, .buttons-a2{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+} 
+
+@media only screen and (min-width: $device-md) {
+    .frequent-questions {
+        flex-direction: row;
+        .tree-root {
+            width: 30%;
+            padding-right: 80px;
+        }
+        .tree-content {
+            width: 70%;
+            padding-left: 80px;
+            border-left: 1px solid gray;
+        }
+    }
+}
