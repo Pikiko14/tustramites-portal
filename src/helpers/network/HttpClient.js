@@ -2,7 +2,7 @@ import axios from 'axios'
 import LocalStorage from '../storage/LocalStorage'
 
 const httpClient = axios.create({
-    baseURL: process.env.REACT_APP_URL_API,
+    baseURL: 'https://api.tustramitess.xyz',
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': 'https://api.tustramitesvip.com,http://localhost:4000'
