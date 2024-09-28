@@ -75,13 +75,20 @@ const NotarialActStepThreePage = (props) => {
     }).then((res) => {
       form.resetFields()
       //handleSave()
+      const messageNoPay = "Ahora vamos a confirmar el valor cobrado por la Notaría de acuerdo a toda la información que nos has suministrado, ya que este valor puede variar dependiendo de la cantidad de solicitantes, del número de páginas del documento final, etc.\n\nApenas nos respondan te estaremos enviando un mensaje a tu correo para que puedas continuar con el pago.";
+      const messagePay = "Ya puedes continuar con el siguiente paso que es pagar tu tramite.";
+      
       Alert.show({
         type: 'error',
         title: user ? '¡Genial ' + user.first_name + '!' : '¡Genial!',
-        message: `Ahora vamos a confirmar el valor cobrado por la Notaría de acuerdo a toda la información que nos has suministrado, ya que este valor puede variar dependiendo de la cantidad de solicitantes, del número de páginas del documento final, etc.\n\nApenas nos respondan te estaremos enviando un mensaje a tu correo para que puedas continuar con el pago.`,
+        message: res.data.go_pay ? messagePay : messageNoPay,
         btnOk: 'Aceptar',
         fnOk: () => {
-          props.history.push('/procedurenotarial')
+          if (res.data.go_pay) {
+            props.history.push('ordersummary?p=' + procedureNotarial._id)
+          } else {
+            props.history.push('/procedurenotarial')
+          }
         },
         btnCancel: 'Cancelar' //,
         //buttonX: true
@@ -543,11 +550,13 @@ const NotarialActStepThreePage = (props) => {
               </Row>
 
               <Row className="containerButtonFinished">
+                <Col span={22}>
                 <Form.Item>
                   <Button type="primary" htmlType="submit" className="btnContinuar">
                     Guardar
                   </Button>
                 </Form.Item>
+                </Col>
               </Row>
             </Form>
           </>
