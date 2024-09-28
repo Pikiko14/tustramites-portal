@@ -414,9 +414,9 @@ const NotarialActStepThreePage = (props) => {
               <Row className="containerNotaries">
                 <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                   {
-                    (showLabelSelected && (
+                    (notarySelected && (
                       <>
-                      <img src="/assets/images/map.png" alt="Map section" className="map-section" />
+                      <div dangerouslySetInnerHTML={{ __html: notarySelected.google_map }} />
                       </>
                     ))
                   }

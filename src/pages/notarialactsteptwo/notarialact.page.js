@@ -356,6 +356,7 @@ const NotarialActStepTwoPage = (props) => {
           <Form
             name="basic"
             layout="vertical"
+            className='form'
             labelCol={{ span: 8 }}
             wrapperCol={{ span: 24 }}
             initialValues={{ remember: true }}
@@ -375,7 +376,7 @@ const NotarialActStepTwoPage = (props) => {
                       group={group}
                       fileList={fileList}
                       setFileList={setFileList}
-                      maximum={9}
+                      maximum={10}
                     />
                   ) : null
                 )}

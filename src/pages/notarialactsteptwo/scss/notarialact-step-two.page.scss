@@ -3,6 +3,7 @@
 
 .notarialStepTwo {
   padding: 50px 50px 150px;
+  width: 85%;
   & .content-add-tramite {
     padding: 0;
     margin-bottom: 30px;
@@ -123,11 +124,11 @@
         & .alinearFiles {
           width: 100%;
           /* justify-content: space-between; */
-          flex-flow: row;
+          flex-flow: column;
           justify-content: flex-start;
           gap: 35px;
           & .containerFullFiles {
-            max-width: 50%;
+            max-width: 100%;
             width: max-content;
             & .containerItemFile {
               display: flex;
@@ -161,7 +162,7 @@
                     // flex-wrap: wrap;
                     // max-width: max-content;
                     // width: max-content;
-                    overflow-x: overlay;
+                    overflow-x: auto;
                     & .cardFile {
                       min-width: 115px;
                       width: 115px;
@@ -228,7 +229,7 @@
             flex-direction: column;
             gap: 20px;
             justify-content: center;
-            width: 25%;
+            width: 100%;
             & .ant-btn {
               width: 65%;
               min-width: 130px;
@@ -372,13 +373,14 @@
       & .containerDocs {
         padding: 40px 15%;
         & .panelFiles {
+          width: 100%;
           & .alinearFiles {
             flex-flow: column-reverse;
             & .tamAdjuntar {
               width: 100%;
             }
             & .containerFullFiles {
-              max-width: 100%;
+              width: 100%;
             }
           }
         }
@@ -410,4 +412,12 @@
       }
     }
   }
+}
+
+.form {
+  width: 100% !important;
+}
+
+#basic_0Fotos {
+  width: 100%;
 }

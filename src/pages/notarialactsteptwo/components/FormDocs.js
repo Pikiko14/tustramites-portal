@@ -84,7 +84,7 @@ const FormDocs = ({ notarialact, group, fileList, setFileList, maximum }) => {
 
   return (
     <Row>
-      <Col span={24} className="panelFiles">
+      <Col className="panelFiles">
         <Row>
           <Col span={24} className="centrar margeTituloActor">
             <h3 className="titleIngresarInfo">{group}</h3>
@@ -112,6 +112,7 @@ const FormDocs = ({ notarialact, group, fileList, setFileList, maximum }) => {
                     >
                       <div className={`displayFlex ${fileList.length ? '' : 'hidden'}`}>
                         <div className="contenedorFiles">
+                          <Row>
                           {fileList.map((item, a) => (
                             <>
                               {item.numDoc === document.name && (
@@ -139,6 +140,7 @@ const FormDocs = ({ notarialact, group, fileList, setFileList, maximum }) => {
                               )}
                             </>
                           ))}
+                          </Row>
                         </div>
                         <Upload
                           listType="picture-card"
@@ -155,9 +157,6 @@ const FormDocs = ({ notarialact, group, fileList, setFileList, maximum }) => {
                     </Form.Item>
                   </div>
                   <div className="tamAdjuntar">
-                    <Button icon={<PaperClipOutlined />} type="primary">
-                      Adjuntar
-                    </Button>
                     <p className="colorGray textoArrastrar">
                       Selecciona los archivos o arrastra y suelta para adjuntar los documentos.
                       Puedes agregar más de un documento.
