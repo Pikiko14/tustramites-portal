@@ -352,19 +352,6 @@ const NotarialActStepTwoPage = (props) => {
             </Col>
           </Row>
           <br />
-          <Row className="containerDescription">
-            <Col span={2}></Col>
-            <Col span={22}>
-              <p className="containerDescription-description">
-                {
-                  'Escanea cada uno de los documentos que te solicitamos a continuación y adjúntalos en formato PDF o si lo prefieres, puedes tomar una foto completa del documento que sea totalmente legible y adjúntala en formato PNG o JPG. Estos archivos no podrán superar los 3 MB.\nRecuerda que en cada solicitud de documentos, podrás adjuntar hasta un máximo de 10 documentos.\n\nSi tienes alguna duda, consúltanos en'
-                }
-                <span className="logo-help">
-                  <LogoTTVAloneIcon />
-                </span>
-              </p>
-            </Col>
-          </Row>
 
           <Form
             name="basic"

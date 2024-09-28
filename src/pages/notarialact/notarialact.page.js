@@ -286,15 +286,6 @@ const NotarialAct = (props) => {
             </Col>
           </Row>
           <br />
-          <Row className="containerDescription">
-            <Col span={1}></Col>
-            <Col span={22}>
-              <p className="containerDescription-description">{notarialact.description}</p>
-              {notarialact.note && (
-                <p className="containerDescription-description">{notarialact.note}</p>
-              )}
-            </Col>
-          </Row>
           <Row className="containerForm">
             <Col span={24}>
               {notarialact.actors.map((actor, i) => (
