@@ -40,7 +40,7 @@ const FrequentQuestions = () => {
   const getSubCategories = async () => {
     const response = await HttpClient.get('/api/subcategoryquestion')
     if (response.status == 200) {
-      setSelected(response.data[0]._id)
+      response.data[0] && setSelected(response.data[0]._id)
       setSubCategories(response.data)
     }
   }
@@ -68,6 +68,7 @@ const FrequentQuestions = () => {
         <div className="frequent-questions">
           <div className="tree-root">
             <Input.Search placeholder="Buscar ..." onSearch={handleSearch} />
+            
             <Collapse style={{ marginTop: '20px' }} defaultActiveKey={['0']}>
               {categories.map((item, i) => (
                 <Panel header={item.name} key={i}>
@@ -114,12 +115,16 @@ const FrequentQuestions = () => {
             </div>
           </div>
         </div>
+
+        <hr></hr>
+
         <div className="frequent-icon">
           <p className="frequent-icon-title">
             Si tienes alguna inquietud adicional, no dudes en contactarnos.
           </p>
-          <ul>
-            <li
+          <div className='frequent-grid'>
+            <div
+              className='frequent-icon-item'
               onClick={() =>
                 dispatch({
                   type: 'CHAT_ME',
@@ -129,8 +134,9 @@ const FrequentQuestions = () => {
             >
               <img src="/assets/icon/home_message.svg" />
               <p>Chat en línea</p>
-            </li>
-            <li
+            </div>
+            <div
+              className='frequent-icon-item'
               onClick={() =>
                 dispatch({
                   type: 'CALL_ME',
@@ -140,8 +146,8 @@ const FrequentQuestions = () => {
             >
               <img src="/assets/icon/home_support.svg" />
               <p>Nosotros te llamamos</p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
