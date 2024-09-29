@@ -200,6 +200,8 @@ const NotarialActStepTwoPage = (props) => {
 
         if (flag === 2) {
           props.history.push('/notarialactstepthree?id=' + notarialact._id + '&p=' + procedureNotarial._id)
+        } else if (flag === 3) {
+          props.history.push('/procedure')
         } else {
           /*if (form.getFieldValue('cbYes')) {
             props.history.push('/')
@@ -316,6 +318,72 @@ const NotarialActStepTwoPage = (props) => {
   const onSubmit = (event) => {
     event.preventDefault()
     console.log('se disparó')
+  }
+
+  const finishProcess2 = () => {
+    if (fileList.length > 0) {
+      /*if (
+        ((!form.getFieldValue('cbYes') || form.getFieldValue('cbYes') === undefined) &&
+          !form.getFieldValue('cbNot')) ||
+        form.getFieldValue('cbNot') === undefined
+      ) {*/
+      //alertShow(2)
+      Alert.show({
+        type: 'success',
+        title: '¡Tú trámite ha sido guardado!',
+        message: `Para completar tu solicitud, podrás ir a la opción del menú Mis trámites, seleccionar el botón Ver de este trámite y así podrás continuar justo en donde lo dejaste.\nRecuerda que tienes 10 días para completarlo. Después de este tiempo, tu trámite será eliminado.\n\nSi tienes alguna duda, activa la ayuda y podrás chatear con nosotros o si deseas podemos llamarte. `,
+        btnOk: 'Aceptar',
+        fnOk: () => {
+          saveProcedureNotarial(3)
+        },
+        btnCancel: 'Cancelar',
+        buttonX: true
+      })
+      /*} else {
+        if (form.getFieldValue('cbYes')) generateIdGroup(2)
+        else {
+          saveProcedureNotarial(2)
+        }
+      }*/
+    } else {
+      Alert.show({
+        type: 'error',
+        title: '¡Faltan archivos!',
+        message: `Algunos documentos son muy importantes para que podamos realizar tu trámite, por favor adjúntalos y si te hace falta alguno, puedes oprimir el botón de Guardar y subirlo cuando lo tengas.\nO si deseas, comunícate con nosotros a través de la ayuda y podremos asesorarte.`,
+        btnOk: 'Aceptar',
+        fnOk: () => { },
+        btnCancel: 'Cancelar',
+        buttonX: true
+      })
+    }
+  }
+
+  const alertShow3 = () => {
+    Alert.show({
+      type: 'warning',
+      title: '',
+      message: `Toda la información que has ingresado quedará guardada para que puedas continuar después. Si necesitas ayuda no dudes en contactarnos.\n\n¿Segur@ que deseas guardar y crear un nuevo tramite?`,
+      btnOk: 'Confirmar',
+      fnOk: () => {
+        alertShow4()
+      },
+      buttonX: true,
+      fnCancel: () => { }
+    })
+  }
+
+  const alertShow4 = () => {
+    Alert.show({
+      type: 'success',
+      title: '¡Tú trámite ha sido guardado!',
+      message: `Para completar tu solicitud, podrás ir a la opción del menú Mis trámites, seleccionar el botón Ver de este trámite y así podrás continuar justo en donde lo dejaste.\nRecuerda que tienes 10 días para completarlo. Después de este tiempo, tu trámite será eliminado.\n\nSi tienes alguna duda, activa la ayuda y podrás chatear con nosotros o si deseas podemos llamarte.`,
+      btnOk: 'Aceptar',
+      fnOk: () => {
+        props.history.push('/procedure')
+      },
+      buttonX: true,
+      fnCancel: () => { }
+    })
   }
 
   useEffect(() => {
@@ -504,6 +572,16 @@ const NotarialActStepTwoPage = (props) => {
                     onClick={() => finishProcess()}
                   >
                     Guardar y salir
+                  </Button>
+                </Form.Item>
+                <Form.Item>
+                  <Button
+                    type="primary"
+                    className="btnSave"
+                    icon={<SaveOutlined />}
+                    onClick={() => finishProcess2()}
+                  >
+                    Guardar y crear uno nuevo
                   </Button>
                 </Form.Item>
                 <Form.Item>

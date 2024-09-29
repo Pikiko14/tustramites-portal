@@ -57,12 +57,14 @@ const NotarialAct = (props) => {
         user: user._id,
         state: '2'
       }).then((res) => {
-        if (flag) {
+        if (flag === true) {
           props.history.push('/notarialactsteptwo?id=' + notarialact._id + '&p=' + res.data.id)
           form.resetFields()
           actors = {}
-        } else {
+        } else if(flag === false) {
           alertShow()
+        } else if(flag === 3) {
+          alertShow3();
         }
       })
     } else {
@@ -258,6 +260,34 @@ const NotarialAct = (props) => {
     })
   }
 
+  const alertShow3 = () => {
+    Alert.show({
+      type: 'warning',
+      title: '',
+      message: `Toda la información que has ingresado quedará guardada para que puedas continuar después. Si necesitas ayuda no dudes en contactarnos.\n\n¿Segur@ que deseas guardar y crear un nuevo tramite?`,
+      btnOk: 'Confirmar',
+      fnOk: () => {
+        alertShow4()
+      },
+      buttonX: true,
+      fnCancel: () => { }
+    })
+  }
+
+  const alertShow4 = () => {
+    Alert.show({
+      type: 'success',
+      title: '¡Tú trámite ha sido guardado!',
+      message: `Para completar tu solicitud, podrás ir a la opción del menú Mis trámites, seleccionar el botón Ver de este trámite y así podrás continuar justo en donde lo dejaste.\nRecuerda que tienes 10 días para completarlo. Después de este tiempo, tu trámite será eliminado.\n\nSi tienes alguna duda, activa la ayuda y podrás chatear con nosotros o si deseas podemos llamarte.`,
+      btnOk: 'Aceptar',
+      fnOk: () => {
+        props.history.push('/procedure')
+      },
+      buttonX: true,
+      fnCancel: () => { }
+    })
+  }
+
   useEffect(() => {
     loadNotarialAct()
     setLoader(true)
@@ -324,6 +354,15 @@ const NotarialAct = (props) => {
                   onClick={() => onFinish(false)}
                 >
                   Guardar y salir
+                </Button>
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  className="btnSave"
+                  icon={<SaveOutlined />}
+                  onClick={() => onFinish(3)}
+                >
+                  Guardar y crear uno nuevo
                 </Button>
                 <Button
                   type="primary"

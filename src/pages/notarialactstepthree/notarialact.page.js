@@ -173,7 +173,7 @@ const NotarialActStepThreePage = (props) => {
     }
   }
 
-  const saveOut = () => {
+  const saveOut = (flag = 1) => {
     if (notarySelected) {
       HttpClient.put('/api/procedurenotarial/' + procedureNotarial._id, {
         notarialAct: notarialact._id,
@@ -183,7 +183,7 @@ const NotarialActStepThreePage = (props) => {
         state: '4',
         notary: notarySelected._id
       }).then((res) => {
-        alertShow()
+        flag === 1 ? alertShow() : alertShow3()
         form.resetFields()
       })
     } else {
@@ -239,6 +239,21 @@ const NotarialActStepThreePage = (props) => {
         props.history.push('/procedurenotarial')
       },
       btnCancel: 'Cancelar'
+    })
+  }
+
+  const alertShow3 = () => {
+    Alert.show({
+      type: 'warning',
+      title: '¡Tú trámite ha sido guardado!',
+      message: `Para completar tu solicitud, podrás ir a la opción del menú Mis trámites, seleccionar el botón Ver de este trámite y así podrás continuar justo en donde lo dejaste.\nRecuerda que tienes 10 días para completarlo. Después de este tiempo, tu trámite será eliminado.\n\nSi tienes alguna duda, activa la ayuda y podrás chatear con nosotros o si deseas podemos llamarte. 
+      `,
+      btnOk: 'Aceptar',
+      fnOk: () => {
+        props.history.push('/procedure')
+      },
+      btnCancel: 'Cancelar',
+      buttonX: true
     })
   }
 
@@ -462,9 +477,19 @@ const NotarialActStepThreePage = (props) => {
                   htmlType="button"
                   className="btnSave"
                   icon={<SaveOutlined />}
-                  onClick={() => saveOut()}
+                  onClick={() => saveOut(1)}
                 >
                   Guardar y salir
+                </Button>
+
+                <Button
+                  type="primary"
+                  htmlType="button"
+                  className="btnSave"
+                  icon={<SaveOutlined />}
+                  onClick={() => saveOut(2)}
+                >
+                  Guardar y crear nuevo
                 </Button>
 
                 <Button type="primary" htmlType="submit" className="btnContinuar">
